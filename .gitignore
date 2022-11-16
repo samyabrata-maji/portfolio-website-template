@@ -1,0 +1,13 @@
+# editor settings
+.vscode
+
+# node modules
+.node_modules
+
+# java
+*.jar
+
+# intellij
+.idea
+out/
+*.iml
