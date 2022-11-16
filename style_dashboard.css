@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    --col-accent: #11101d;
+}
+
+body {
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: var(--col-accent);
+    height: 100%;
+    width: 240px;
+    padding: 6px 14px;
+}
+
+.sidebar .sidebar-header .sidebar-header-logo {
+    color: #fff;
+    display: flex;
+    height: 50px;
+    width: 100%;
+    align-items: center;
+}
+
+.sidebar-header-logo .sidevar-header-box-icon {
+    font-size: 28px;
+    margin-right: 5px;
+
+}
+
+.sidebar-header-logo .sidebar-header-title h2 {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.sidebar #menu-btn {
+    position: absolute;
+    color: #fff;
+    left: 90%;
+    top: 6px;
+    font-size: 20px;
+    height: 25px;
+    width: 25px;
+    text-align: center;
+    line-height: 50px;
+    transform: translate(-50%);
+}
+
+/* MENU ITEMS */
+.sidebar ul {
+    margin-top: 20px;
+}
+
+.sidebar ul li {
+    position: relative;
+    height: 50px;
+    width: 100%;
+    list-style: none;
+}
