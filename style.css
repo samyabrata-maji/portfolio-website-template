@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    /* THEMES */
+    --col-pri: none;
+    --col-sec: none;
+    --col-accent: none;
+}
+
+.container-main {
+    display: flex;
+}
+
+.sidebar-con-outer {
+    background-color: greenyellow;
+    display: block;
+    width: 300px; /* use relative units*/
+    height: 100vh;
+}
+
+.sidebar-con-outer > ul {
+    background-color: red;
+    height: fit-content;
+    width: 100%;
+    display: block;
+}
+
+.display-block {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    background-color: antiquewhite;
+}
