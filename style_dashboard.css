@@ -14,6 +14,10 @@
     --nav-border: 12px;
 }
 
+.icons {
+
+}
+
 body {
     position: relative;
     min-height: 100vh;
@@ -45,20 +49,22 @@ body {
 }
 
 .sidebar-header-logo .sidevar-header-box-icon {
+    padding: auto;
     font-size: 28px;
     margin-right: 5px;
-
 }
 
 .sidebar-header-logo .sidebar-header-title h2 {
     font-size: 20px;
     font-weight: 400;
+    background-color: green;
 }
 
 .sidebar #menu-btn {
     position: absolute;
-    color: #fff;
-    left: 90%;
+    /* color: #fff; */
+    background-color: red;
+    left: 50%;
     top: 6px;
     font-size: 20px;
     height: 25px;
@@ -67,6 +73,12 @@ body {
     line-height: 50px;
     transform: translate(-50%);
 }
+
+.sidebar .sidebar-active .sidebar-header-title {
+    display: none;
+    left: 90%;
+}
+
 
 /* MENU ITEMS */
 .sidebar ul {
