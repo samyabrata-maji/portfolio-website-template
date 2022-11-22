@@ -25,7 +25,7 @@ body {
     overflow: hidden;
 }
 
-.sidebar {
+.sb {
     position: fixed;
     top: 0;
     left: 0;
@@ -36,11 +36,11 @@ body {
     transition: all 0.5s ease;
 }
 
-.sidebar-active {
+.sb-active {
     width: 240px;
 }
 
-.sidebar .sidebar-header .sidebar-header-logo {
+.sb .sb-header .sb-header-logo {
     color: #fff;
     display: flex;
     height: 50px;
@@ -48,19 +48,19 @@ body {
     align-items: center;
 }
 
-.sidebar-header-logo .sidevar-header-box-icon {
+.sb-header-logo .sidevar-header-box-icon {
     padding: auto;
     font-size: 28px;
     margin-right: 5px;
 }
 
-.sidebar-header-logo .sidebar-header-title h2 {
+.sb-header-logo .sb-header-title h2 {
     font-size: 20px;
     font-weight: 400;
     background-color: green;
 }
 
-.sidebar #menu-btn {
+.sb #menu-btn {
     position: absolute;
     /* color: #fff; */
     background-color: red;
@@ -74,18 +74,18 @@ body {
     transform: translate(-50%);
 }
 
-.sidebar .sidebar-active .sidebar-header-title {
+.sb .sb-active .sb-header-title {
     display: none;
     left: 90%;
 }
 
 
 /* MENU ITEMS */
-.sidebar ul {
+.sb ul {
     margin-top: 20px;
 }
 
-.sidebar ul li {
+.sb ul li {
     position: relative;
     height: 50px;
     width: 100%;
@@ -96,7 +96,7 @@ body {
 }
 
 /* tooltip */
-.sidebar ul li .sidebar-menu-tooltip {
+.sb ul li .sb-menu-tooltip {
     position: absolute;
     height: 35px;
     width: 122px;
@@ -113,13 +113,13 @@ body {
     pointer-events: none;
 }
 
-.sidebar ul li:hover .sidebar-menu-tooltip {
+.sb ul li:hover .sb-menu-tooltip {
     transition: all 0.5s ease;
     top: 50%;
     opacity: 1;
 }
 
-.sidebar ul li a {
+.sb ul li a {
     color: #fff;
     display: flex;
     align-items: centers;
@@ -128,11 +128,11 @@ body {
     border-radius: var(--nav-border);
 }
 
-.sidebar ul li a span {
+.sb ul li a span {
     margin: 0 12px;
 }
 
-.sidebar ul li input {
+.sb ul li input {
     position: absolute;
     height: 100%;
     width: 100%;
@@ -147,14 +147,14 @@ body {
     color: #fff;
 }
 
-.sidebar ul li a:hover {
+.sb ul li a:hover {
     color: var(--col-accent);
     background-color: #fff;
 }
-.sidebar ul li a:hover .sidebar-menu-box-icon{
+.sb ul li a:hover .sb-menu-box-icon{
     color: var(--col-accent);
 }
-.sidebar ul li a .sidebar-menu-box-icon {
+.sb ul li a .sb-menu-box-icon {
     margin-top: 5px;
     height: 20px;
     min-width: 20px;

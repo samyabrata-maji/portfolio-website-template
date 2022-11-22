@@ -1,6 +1,6 @@
 let btn = document.getElementById('menu-btn')
-let sidebar = document.querySelector('.sidebar')
+let sidebar = document.querySelector('.sb')
 
 btn.onclick = () => {
-    sidebar.classList.toggle('sidebar-active')
+    sidebar.classList.toggle('sb-active')
 }
