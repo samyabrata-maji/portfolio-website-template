@@ -1,7 +1,16 @@
 .main {
     display: flex;
 }
+.sb {
 
+}
+
+.content {
+    
+}
+.content {
+    padding: 16px;
+}
 .content, .content-section {
     background-color: goldenrod;
     width: 100%;
@@ -20,6 +29,6 @@
 }
 
 .content-section-grid > div {
-    background-color: red;
-
+    background-color: coral;
+    border: black 3px solid;
 }
