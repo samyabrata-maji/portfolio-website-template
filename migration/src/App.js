@@ -1,13 +1,13 @@
-import Content from "./components/Content";
+import Content from "./components/content/Content";
 import SideBar from "./components/sidebar/SideBar";
 
 
 function App() {
   return (
-    <div>
+    <>
       <SideBar></SideBar>
       <Content></Content>
-    </div>
+    </>
   );
 }
 
