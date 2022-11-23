@@ -41,15 +41,10 @@ export default function SideBar() {
 
     const menu_items = menu_items_data.map((item) => {
         return <MenuItem
+            key = {item.id}
             ionicon = {item.ionicon}
             title={item.title}></MenuItem>
     })
-
-    const id = [1,2,3,4,5,6]
-
-    // const btnref = id.map((id) => {
-    //     return <button key={id}>Hello</button>
-    // })
 
   return (
     <div className="sb">
