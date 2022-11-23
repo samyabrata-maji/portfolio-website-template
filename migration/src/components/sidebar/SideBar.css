@@ -77,9 +77,9 @@ body {
 }
 
 .sb #menu-btn, .sb-header-menu-button {
-    /* color: #fff; */
+    color: #fff;
     /* background-color: red; */
-    font-size: 20px;
+    font-size: 1rem;
     height: var(--sb-icons-ht);
     width: var(--sb-icons-ht);
     text-align: center;

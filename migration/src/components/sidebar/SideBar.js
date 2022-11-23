@@ -12,24 +12,21 @@ export default function SideBar() {
             boxicon: "",
             color: "white",
             classNames: [],
-        },
-        {
+        }, {
             id: 1,
             title: "Repo",
             ionicon: "git-branch-outline",
             boxicon: "",
             color: "white",
             classNames: [],
-        },
-        {
+        }, {
             id: 2,
             title: "Tech Stacks",
             ionicon: "build-outline",
             boxicon: "",
             color: "white",
             classNames: [],
-        },
-        {
+        }, {
             id: 3,
             title: "Contact Me",
             ionicon: "help-outline",
@@ -49,7 +46,9 @@ export default function SideBar() {
   return (
     <div className="sb">
         <div className="sb-header">
-            <div className="sb-header-menu-button"><ion-icon name="menu-outline" id="menu-btn" color="white"></ion-icon></div>
+            <div className="sb-header-menu-button">
+                <ion-icon name="menu-outline" id="menu-btn" color="white"></ion-icon>
+            </div>
         </div>
         
         <ul className="sb-menu">
