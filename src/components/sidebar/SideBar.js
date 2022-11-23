@@ -21,14 +21,14 @@ export default function SideBar() {
             classNames: [],
         }, {
             id: 2,
-            title: "Tech Stacks",
+            title: "Tech",
             ionicon: "build-outline",
             boxicon: "",
             color: "white",
             classNames: [],
         }, {
             id: 3,
-            title: "Contact Me",
+            title: "Contact",
             ionicon: "help-outline",
             boxicon: "",
             color: "white",
@@ -43,11 +43,15 @@ export default function SideBar() {
             title={item.title}></MenuItem>
     })
 
+    function toggleMenu() {
+        document.querySelector('.main .sb').classList.toggle('sb-active')
+    }
+
   return (
     <div className="sb">
         <div className="sb-header">
-            <div className="sb-header-menu-button">
-                <ion-icon name="menu-outline" id="menu-btn" color="white"></ion-icon>
+            <div className="sb-header-menu-button" onClick={toggleMenu}>
+                <ion-icon name="chevron-forward-outline" id="menu-btn" color="white"></ion-icon>
             </div>
         </div>
         

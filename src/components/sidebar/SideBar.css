@@ -27,6 +27,7 @@ body {
 }
 
 
+
 .sb {
     /* position: fixed; */
     top: 0;
@@ -45,6 +46,16 @@ body {
 
 .sb-active {
     width: 240px;
+}
+
+#menu-btn {
+    /* transform: rotate(180deg); */
+    transition: all 0.5 ease;
+}
+
+.sb-active #menu-btn {
+    transform: rotate(180deg);
+    transition: all 0.5 ease;
 }
 
 .sb .sb-header .sb-header-logo {
@@ -76,14 +87,19 @@ body {
     font-weight: 400;
 }
 
-.sb #menu-btn, .sb-header-menu-button {
+.sb-header-menu-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     color: #fff;
-    /* background-color: red; */
-    font-size: 1rem;
     height: var(--sb-icons-ht);
     width: var(--sb-icons-ht);
     text-align: center;
     line-height: var(--sb-icons-ht);
+    cursor: pointer;
+}
+.sb #menu-btn{
+    font-size: 1.5rem;
 }
 
 .sb .sb-active .sb-header-title {
@@ -145,15 +161,22 @@ body {
     text-decoration: none;
     transition: all 0.4s ease;
     border-radius: var(--nav-border);
+    flex-basis: 0;
 }
-
+.sb ul li a>div{
+    flex-shrink: 0;
+}
 .sb ul li a>span {
     display: none;
+    flex-shrink: 1;
+    transition: all 0.5s ease;
     /* margin: 0 12spx; */
 }
 
 .sb-active ul li a>span {
     display: block;
+    margin-left: 0.5rem;
+    transition: all 0.5s ease;
     /* margin: 0 12spx; */
 }
 
