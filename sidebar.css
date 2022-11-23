@@ -5,7 +5,8 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
-    font-size: 16px;
+    
+    /* font-size: 16px; */
 
     --col-accent: #11101d;
 
@@ -26,6 +27,7 @@ body {
 }
 
 .sidebar {
+    display: none;
     position: fixed;
     top: 0;
     left: 0;
@@ -153,12 +155,15 @@ body {
 }
 .sidebar ul li a:hover .sidebar-menu-box-icon{
     color: var(--col-accent);
+    background-color: red;
 }
 .sidebar ul li a .sidebar-menu-box-icon {
-    margin-top: 5px;
+    margin-top: auto;
+    margin-bottom: auto;
     height: 20px;
     min-width: 20px;
-    border-radius: var(--nav-border);
-    line-height: 50px;
+    width: 20px;
+    padding: 0;
     text-align: center;
+    font-size: 40px;
 }

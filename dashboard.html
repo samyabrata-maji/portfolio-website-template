@@ -8,10 +8,12 @@
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
-    <link rel="stylesheet" href="style_dashboard.css">
+    <link rel="stylesheet" href="content.css">
+    <link rel="stylesheet" href="sidebar.css">
 
 </head>
 <body>
+    <div class="main">
     <div class="sidebar">
         <!-- header -->
         <div class="sidebar-header">
@@ -31,7 +33,7 @@
             </li>
             <li>
                 <a href="#">
-                    <box-icon class="sidebar-menu-box-icon" color="white" type="solid" name="rocket"></box-icon>
+                    <ion-icon name="home-outline" class="sidebar-menu-box-icon" color="white"></ion-icon>
                     <span class="sidebar-menu-items">Home</span>
                 </a>
                 <span class="sidebar-menu-tooltip">Home</span>
@@ -62,6 +64,20 @@
         </ul>
     </div>
 
+    <div class="content">
+        <div class="content-section">
+            <div class="content-section-grid">
+                <!-- grid items -->
+                <div class="content-section-grid-item"></div>
+                <div class="content-section-grid-item"></div>
+                <div class="content-section-grid-item"></div>
+                <div class="content-section-grid-item"></div>
+                <div class="content-section-grid-item"></div>
+
+            </div>
+        </div>
+    </div>
+    </div>
     <script src="main.js"></script>
 </body>
 </html>
