@@ -1,14 +1,14 @@
-main {
+.main {
     display: flex;
 }
 
-.con, .con-section {
+.content, .content-section {
     background-color: goldenrod;
     width: 100%;
     height: 100vh;
 }
 
-.con-section-grid {
+.content-section-grid {
     width: 100%;
     height: 100%;
     background-color: bisque;
@@ -19,7 +19,7 @@ main {
     grid-template-rows: 8rem 8rem;
 }
 
-.con-section-grid > div {
+.content-section-grid > div {
     background-color: red;
 
 }
