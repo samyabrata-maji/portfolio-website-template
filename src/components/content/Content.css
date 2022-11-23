@@ -1,0 +1,48 @@
+:root { 
+    --gt-col: repeat(3, 1fr);
+}
+
+.main {
+    display: flex;
+}
+
+.content {
+    padding: 3rem 2rem;
+    overflow-y: scroll;
+}
+.content, .content-section {
+    /* background-color: green; */
+    width: 100%;
+    
+}
+
+.content-section-grid {
+    width: 100%;
+    height: max-content;
+    background-color: #fff;
+
+    display: grid;
+    gap: 1.2rem;
+    grid-template-columns: var(--gt-col);
+    grid-template-rows: 8rem 8rem;
+}
+
+.content-section-grid > div {
+    background-color: #fff;
+    /* border: black 1px solid; */
+    border-radius: 0.5rem;
+    box-shadow: 0 0 0.25rem rgba(0,0,0,0.1),
+    0.1rem 0.1rem 0.15rem rgba(0,0,0,0.1);
+}
+
+@media only screen and (max-width: 800px) {
+    :root {
+        --gt-col: repeat(2, 1fr);
+    }
+}
+
+@media only screen and (max-width: 475px) {
+    :root {
+        --gt-col: 1fr;
+    }
+}

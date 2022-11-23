@@ -1,0 +1,14 @@
+import React from 'react'
+import './SideBar.css'
+
+export default function MenuItem(props) {
+  return (
+    <li>
+        <a href="https://google.com">
+            <div className="sb-menu-box-icon"><ion-icon name={props.ionicon} className="sb-menu-box-icon" color="solid"></ion-icon></div>
+            <span className="sb-menu-items">{props.title}</span>
+        </a>
+            <span className="sb-menu-tooltip">{props.title}</span>
+    </li>
+  )
+}
