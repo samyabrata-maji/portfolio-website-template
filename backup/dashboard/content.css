@@ -1,11 +1,9 @@
 .main {
     display: flex;
 }
-.sb {
-
-}
 
 .content {
+    background-color: red;
     
 }
 .content {
