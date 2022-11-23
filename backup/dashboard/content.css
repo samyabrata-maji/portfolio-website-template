@@ -2,17 +2,17 @@
     display: flex;
 }
 
-
-
+.content {
+    background-color: red;
+    
+}
 .content {
     padding: 16px;
-    
-    overflow-y: scroll;
 }
 .content, .content-section {
-    /* background-color: green; */
+    background-color: goldenrod;
     width: 100%;
-    
+    height: 100vh;
 }
 
 .content-section-grid {
