@@ -2,7 +2,6 @@ let username = 'samyabrata-maji'
 const repo_url = `https://api.github.com/users/${username}/repos`;
 
 // TODO: use async await
-
 export const fetchData = () => fetch(repo_url)
   .then((response) => {
     console.log('FETCHING...') // TODO: remove this
