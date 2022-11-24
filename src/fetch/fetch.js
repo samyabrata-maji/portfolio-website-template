@@ -3,7 +3,7 @@ const repo_url = `https://api.github.com/users/${username}/repos`;
 
 // TODO: use async await
 
-export const fetchData = (repo_url) => fetch(repo_url)
+export const fetchData = () => fetch(repo_url)
   .then((response) => {
     console.log('FETCHING...') // TODO: remove this
     if (response.ok) return response.json();

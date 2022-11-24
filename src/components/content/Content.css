@@ -7,13 +7,17 @@
 }
 
 .content {
-    padding: 3rem 2rem;
+    padding: 1.5rem 2rem;
     overflow-y: scroll;
 }
 .content, .content-section {
     /* background-color: green; */
     width: 100%;
     
+}
+
+.content-header {
+    padding-bottom: 1.5rem;
 }
 
 .content-section-grid {
