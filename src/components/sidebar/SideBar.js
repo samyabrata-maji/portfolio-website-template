@@ -20,6 +20,7 @@ export default function SideBar() {
     {
       id: 0,
       title: "Home",
+      pageTo: "/",
       ionicon: "home-outline",
       boxicon: "",
       color: "white",
@@ -28,6 +29,7 @@ export default function SideBar() {
     {
       id: 1,
       title: "Repo",
+      pageTo: "/repo",
       ionicon: "git-branch-outline",
       boxicon: "",
       color: "white",
@@ -36,6 +38,7 @@ export default function SideBar() {
     {
       id: 2,
       title: "Tech",
+      pageTo: "/tech",
       ionicon: "build-outline",
       boxicon: "",
       color: "white",
@@ -44,6 +47,7 @@ export default function SideBar() {
     {
       id: 3,
       title: "Contact",
+      pageTo: "/contact",
       ionicon: "help-outline",
       boxicon: "",
       color: "white",
@@ -80,14 +84,6 @@ export default function SideBar() {
       </div>
 
       <ul className="sb-menu">
-        {/* <li>
-                <div className='sb-search-box'>
-                    <div className="sb-search-box-icon">
-                    <ion-icon name='search' className="sb-search-box-icon" color="solid"></ion-icon>
-                    </div>
-                    <input placeholder='Search'></input>
-                </div>
-            </li> */}
         {menu_items}
       </ul>
     </div>
