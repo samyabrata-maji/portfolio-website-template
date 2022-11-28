@@ -65,9 +65,10 @@
 }
 
 .content-section-repo-item > p {
-  --max-lines: 3;
+  --max-lines: 2;
   display: -webkit-box;
   overflow: hidden;
+  text-overflow: ellipsis;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: var(--max-lines);
 }
