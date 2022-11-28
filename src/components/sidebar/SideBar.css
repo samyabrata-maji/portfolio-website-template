@@ -27,7 +27,7 @@ body {
 }
 
 
-
+/* outermost container */
 .sb {
     /* position: fixed; */
     top: 0;
@@ -44,6 +44,7 @@ body {
     justify-content: space-evenly; */
 }
 
+/* when sidebar is open*/ 
 .sb-active {
     width: 240px;
 }
@@ -98,6 +99,8 @@ body {
     line-height: var(--sb-icons-ht);
     cursor: pointer;
 }
+
+/* menu toggle button */
 .sb #menu-btn{
     font-size: 1.5rem;
 }
@@ -148,7 +151,7 @@ body {
     pointer-events: none;
 }
 
-.sb ul li:hover .sb-menu-tooltip {
+.sb-passive ul li:hover .sb-menu-tooltip {
     transition: all 0.5s ease;
     top: 50%;
     opacity: 1;
@@ -169,27 +172,42 @@ body {
 .sb ul li a>span {
     display: none;
     flex-shrink: 1;
-    transition: all 0.5s ease;
+    /* transition: all 0.5s ease; */
     /* margin: 0 12spx; */
 }
 
 .sb-active ul li a>span {
     display: block;
     margin-left: 0.5rem;
-    transition: all 0.5s ease;
+    /* transition: all 0.5s ease; */
     /* margin: 0 12spx; */
 }
 
-.sb ul li input {
+.sb ul li .sb-search-box {
     height: 100%;
     width: 100%;
+
+    display: flex;
+    flex-wrap: nowrap;
+
     border-radius: var(--nav-border);
     outline: none;
     border: none;
     background-color: var(--col-accent-sec);
-    padding-left: 50px;
     font-size: 18px;
     color: #fff;
+}
+
+.sb ul li .sb-search-box input {
+    background-color: red;
+    flex-shrink: 1;
+}
+
+.sb-search-box-icon {
+    height: 100%;
+    width: 100%;
+    font-size: 1.5rem;
+    background-color: green;
 }
 
 .sb ul li a:hover {
@@ -219,3 +237,5 @@ body {
     /* margin: 0.2rem; */
     /* transform: translateY(-50%); */
 }
+
+

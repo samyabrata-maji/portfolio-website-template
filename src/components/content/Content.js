@@ -1,24 +1,31 @@
-import React from 'react'
-import './Content.css'
-import RepoItem from './RepoItem'
+import React, { useEffect, useState } from "react";
+import { fetchData } from "../../fetch/fetch";
+
+// do not change the order
+import "./Content.css";
+import "./RepoItem.css"
+import RepoItem from "./RepoItem";
 
 export default function Content() {
+  
+  const [repo_items, setRepoItems] = useState(_ => [])
 
-  const content_repo_data = [
-    1,2,3,4,5
-  ]
-
-  const content_repo = content_repo_data.map(item => {
-    return <RepoItem key={item} id={item}></RepoItem>
-  })
-
+  useEffect(() => {
+    fetchData().then(data => {
+      setRepoItems(data.map(item => {
+        return <RepoItem key={item.id} data={item}></RepoItem>
+      }))
+    })
+  }, [])
+  
   return (
     <div className="content">
-        <div className="content-section">
-            <div className="content-section-grid">
-                {content_repo}
-            </div>
-        </div>
+      <div className="content-header">
+        <h2>My Repositories</h2>
+      </div>
+      <div className="content-section">
+        <div className="content-section-grid">{repo_items}</div>
+      </div>
     </div>
-  )
+  );
 }
