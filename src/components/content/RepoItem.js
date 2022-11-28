@@ -32,8 +32,17 @@ export default function RepoItem(props) {
               default:
                 break;
             }
+
+            // let default_color = "#868686"
+            // fetch("../../utility/color.json").then(res => {
+            //   if (res.ok) return res.json().icon_color
+            //   else throw new Error("erere")
+            // }).then(data => {
+            //   default_color = data[Math.floor(Math.random()*6)]
+            // })
+
             return (
-              <box-icon key={id++} color="#868686" type="logo" size="sm" name={item}></box-icon>
+              <box-icon key={id++} color="#BDBAB4" type="logo" size="sm" name={item}></box-icon>
             );
           });
         });

@@ -10,7 +10,9 @@
 
 .content {
   padding: 1.5rem 2rem;
-  overflow-y: scroll;
+  overflow: auto;
+  height: 200vh;
+  /* scroll-behavior: auto; */
 }
 .content,
 .content-section {
@@ -88,4 +90,13 @@
 .content-section-repo-icons > div {
   display: flex;
   align-items: center;
+}
+
+
+.repo-stars > p, .repo-stars > ion-icon {
+  color: #FF9900;
+}
+
+.repo-forks > p, .repo-forks > ion-icon {
+  color: #FF6766;
 }

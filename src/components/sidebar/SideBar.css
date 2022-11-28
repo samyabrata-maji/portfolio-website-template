@@ -13,35 +13,40 @@
     --col-accent: #11101d;
     --col-accent-sec: #1d1b31;
 
-
     /* DIMENSIONS */
     --nav-border: 12px;
     --sb-icons-ht: 50px;
+}
+
+html, body {
+    margin: 0;
+    height: 100%;
 }
 
 body {
     position: relative;
     min-height: 100vh;
     width: 100%;
-    overflow: hidden;
+    /* overflow-y: hidden; */
 }
 
 
 /* outermost container */
 .sb {
-    /* position: fixed; */
+    /* overflow-y: hidden; */
+    /* position: static; */
     top: 0;
     left: 0;
     background-color: var(--col-accent);
     height: 100vh;
     width: 80px;
-    padding: 6px 14px;
+    padding: 1.2rem 1rem;
     transition: all 0.5s ease;
     background-color: var(--col-accent);
 
-    /* display: flex;
+    display: flex;
     flex-direction: column;
-    justify-content: space-evenly; */
+    justify-content: space-evenly;
 }
 
 /* when sidebar is open*/ 
@@ -239,3 +244,6 @@ body {
 }
 
 
+@media screen and (max-height: 600px) {
+    
+}
