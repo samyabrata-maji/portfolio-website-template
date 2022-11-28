@@ -23,6 +23,8 @@ export const fetchData = () =>
             contributers: repo.contributers,
             license: repo.license,
             topics: repo.topics,
+            forks: repo.forks_count,
+            stars: repo.stargazers_count
           };
         });
       return data;
@@ -49,9 +51,4 @@ const fetchLanguages = (repo_name) => {
   })
 };
 
-
-const fetchMyAss = (your_ass) => {
-  console.log(your_ass)
-}
-
-export { fetchLanguages ,fetchMyAss};
+export { fetchLanguages };
