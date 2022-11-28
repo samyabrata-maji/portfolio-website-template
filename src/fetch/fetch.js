@@ -32,14 +32,26 @@ export const fetchData = () =>
     });
 
 const fetchLanguages = (repo_name) => {
-  const lang_url = `https://api.github.com/repos/${username}/${repo_name.trim()}/languages`;
+  
+  const lang_url = `https://api.github.com/repos/${username}/${repo_name}/languages`;
+  // window.open(lang_url)
   fetch(lang_url).then(response => {
-    if (response && response.ok) return response.json()
+    if (response.ok) return response.json()
     else throw new Error(response.status)
-  }).then(data => {
-    if (data !== undefined) return data.keys()
-    else return ["error-alt"]
+  })
+  .then(data => {
+    let data_keys = [...Object.keys(data)]
+    console.log(data_keys)
+    if (data_keys !== undefined) return data_keys
+    else return []
+  }).catch(error => {
+    console.log(error.message);
   })
 };
 
-export { fetchLanguages };
+
+const fetchMyAss = (your_ass) => {
+  console.log(your_ass)
+}
+
+export { fetchLanguages ,fetchMyAss};

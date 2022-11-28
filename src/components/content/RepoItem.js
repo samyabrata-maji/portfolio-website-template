@@ -1,30 +1,22 @@
 import React, { useEffect, useState } from 'react'
-import { fetchLanguages } from '../../fetch/fetch'
+import { fetchData, fetchLanguages, fetchMyAss } from '../../fetch/fetch'
 import "./RepoItem.css"
 
 export default function RepoItem(props) {
   
-  // let icons_group = []
-  // if (props.data.language && props.data.language!==undefined) {
-  //   if ( props.data.language instanceof String) {
-  //     icons_group = [props.data.language]
-  //   }
-  //   icons_group = props.data.language.map(item => {
-  //     return <box-icon type='logo' name={item}></box-icon>
+  // let [icons_group, setIconsGroup] = useState(_ => [])
+  // useEffect(() => {
+  //   // console.log(props.data.name)
+  //   setIconsGroup(_ => {
+  //     let icon_names = []
+  //     if (props !== undefined && props !== null && props.data.name !== "") {
+  //       fetchLanguages(props.data.name).then(data => {
+        
+  //       })
+  //     }
+  //     console.log("hello")
   //   })
-  // }
-
-  let [icons_group, setIconsGroup] = useState(_ => [])
-  useEffect(() => {
-    // console.log(props.data.name)
-    if (props.data.name !== undefined) {
-      fetchLanguages(props.data.name).then(data => {
-        setIconsGroup(data.map(item => {
-          return <box-icon type='logo' name={item}></box-icon>
-        }))
-      })
-    }
-  }, [props.data.name])
+  // }, [props.data.name])
   
 
   // if ()
@@ -33,7 +25,7 @@ export default function RepoItem(props) {
     <div className="content-section-repo-item">
         <h3>{props.data.name}</h3>
         <p>{props.data.description && `${props.data.description}`}</p>
-        <div className="c">{icons_group}</div>
+        <div className="c"></div>
     </div>
   )
 }
