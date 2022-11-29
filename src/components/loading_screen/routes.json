@@ -1,0 +1,10 @@
+{
+    "routes": [
+        {
+            "to": "/repo",
+            "content": {
+                "title": "My Repositories"
+            }
+        }
+    ]
+}
