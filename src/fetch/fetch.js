@@ -1,5 +1,5 @@
 // "use strict"
-const GLOBAL_USERNAME = "rahuldkjain";
+const GLOBAL_USERNAME = "samyabrata-maji";
 const GLOBAL_USER_URL = `https://api.github.com/users/${GLOBAL_USERNAME}/repos`;
 
 

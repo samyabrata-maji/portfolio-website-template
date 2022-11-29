@@ -1,5 +1,5 @@
 import { Route, Routes } from "react-router-dom";
-import ContentRepo from "./components/content/ContentRepo";
+import ContentRepo from "./components/content_repo/ContentRepo";
 import SideBar from "./components/sidebar/SideBar";
 
 

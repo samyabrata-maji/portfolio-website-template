@@ -93,6 +93,10 @@
   align-items: center;
 }
 
+.content-section-repo-items a {
+  color: green;
+}
+
 .repo-icons {
   /* background-color: #FF6766; */
   min-width: 60%;

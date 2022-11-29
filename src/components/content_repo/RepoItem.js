@@ -52,7 +52,7 @@ export default function RepoItem(props) {
 
   return (
     <div className="content-section-repo-item">
-      <h3>{props.data.name}</h3>
+      <h3><a href={props.data.url}>{props.data.name}</a></h3>
       <p>{props.data.description && `${props.data.description}`}</p>
       <div className="content-section-repo-icons">
         <div className="repo-icons">{icon_group}</div>

@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { fetchData } from "../../fetch/fetch";
 
 // do not change the order
-import "./Content.css";
+import "./ContentRepo.css";
 import RepoItem from "./RepoItem";
 
 export default function Content() {
