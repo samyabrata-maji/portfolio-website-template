@@ -1,5 +1,5 @@
 import { Route, Routes } from "react-router-dom";
-import Content from "./components/content/Content";
+import ContentRepo from "./components/content/ContentRepo";
 import SideBar from "./components/sidebar/SideBar";
 
 
@@ -8,7 +8,7 @@ function App() {
     <>
       <SideBar></SideBar>
       <Routes>
-        <Route path="/" element={<Content/>}></Route>
+        <Route path="/" element={<ContentRepo/>}></Route>
       </Routes>
     </>
   );

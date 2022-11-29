@@ -1,10 +1,21 @@
 // "use strict"
-let username = "samyabrata-maji";
-const repo_url = `https://api.github.com/users/${username}/repos`;
+const GLOBAL_USERNAME = "rahuldkjain";
+const GLOBAL_USER_URL = `https://api.github.com/users/${GLOBAL_USERNAME}/repos`;
+
+
+const errorMessage = (code) => {
+  switch(code) {
+    case '403':
+      console.error(`${code}: FORBIDDEN ACCESS: your API fetching limit has exceeded please wait for 1 min and try again`)
+      break
+    default:
+      console.error(`${code}: UNKNOWN ERROR`)
+  }
+}
 
 // TODO: use async await
 export const fetchData = () =>
-  fetch(repo_url)
+  fetch(GLOBAL_USER_URL)
     .then((response) => {
       // console.log("FETCHING..."); // TODO: remove this
       if (response.ok) return response.json();
@@ -12,7 +23,7 @@ export const fetchData = () =>
     })
     .then((data) => {
       data = data
-        .filter((repo) => !repo.fork)
+        // .filter((repo) => !repo.fork)
         .map((repo) => {
           return {
             id: repo.id,
@@ -30,12 +41,12 @@ export const fetchData = () =>
       return data;
     })
     .catch((error) => {
-      console.log(`Unable to fetch: ${error.message}`);
+      errorMessage(error.message)
     });
 
 const fetchLanguages = (repo_name) => {
   
-  const lang_url = `https://api.github.com/repos/${username}/${repo_name}/languages`;
+  const lang_url = `https://api.github.com/repos/${GLOBAL_USERNAME}/${repo_name}/languages`;
   // window.open(lang_url)
   fetch(lang_url).then(response => {
     if (response.ok) return response.json()
@@ -51,4 +62,4 @@ const fetchLanguages = (repo_name) => {
   })
 };
 
-export { fetchLanguages };
+export { fetchLanguages, GLOBAL_USERNAME};

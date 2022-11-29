@@ -93,6 +93,11 @@
   align-items: center;
 }
 
+.repo-icons {
+  /* background-color: #FF6766; */
+  min-width: 60%;
+  justify-content: space-evenly;
+}
 
 .repo-stars > p, .repo-stars > ion-icon {
   color: #FF9900;

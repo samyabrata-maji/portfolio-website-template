@@ -29,13 +29,11 @@ body {
   position: relative;
   min-height: 100vh;
   width: 100%;
-  /* overflow-y: hidden; */
+  overflow-y: hidden;
 }
 
 /* outermost container */
 .sb {
-  /* overflow-y: hidden; */
-  /* position: static; */
   top: 0;
   left: 0;
   background-color: var(--col-accent);

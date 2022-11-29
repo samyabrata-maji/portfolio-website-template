@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from "react";
-import "./RepoItem.css";
+import { GLOBAL_USERNAME } from "../../fetch/fetch";
 
 export default function RepoItem(props) {
   const [icon_group, setIconsGroup] = useState([]);
   useEffect(() => {
     let repo_name = props.data.name;
-    let username = "samyabrata-maji";
+    let username = GLOBAL_USERNAME
     let lang_url = `https://api.github.com/repos/${username}/${repo_name}/languages`;
 
     fetch(lang_url)
@@ -42,7 +42,7 @@ export default function RepoItem(props) {
             // })
 
             return (
-              <box-icon key={id++} color="#BDBAB4" type="logo" size="sm" name={item}></box-icon>
+              <box-icon key={id++} color="#013220" type="logo" size="sm" name={item}></box-icon>
             );
           });
         });
