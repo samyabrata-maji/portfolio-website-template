@@ -8,3 +8,4 @@
 - profile: pf
 - header: head
 - column: col
+- icon: ic (don't change box-icons on ionicons)
