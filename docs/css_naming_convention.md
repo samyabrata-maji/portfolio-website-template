@@ -5,3 +5,5 @@
 - background: bg
 - sidebar: sb
 - button: btn
+- profile: pfp
+- header: head
