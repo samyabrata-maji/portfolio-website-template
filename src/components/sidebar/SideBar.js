@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import MenuItem from "./MenuItem";
 import "./SideBar.css";
+import { MENU_ITEMS_DATA } from "./dat_menu_items";
 
 export default function SideBar() {
   // changing theme
@@ -16,48 +17,10 @@ export default function SideBar() {
 //     });
 //   }
 
-  const menu_items_data = [
-    {
-      id: 0,
-      title: "Home",
-      pageTo: "/",
-      ionicon: "home-outline",
-      boxicon: "",
-      color: "white",
-      classNames: [],
-    },
-    {
-      id: 1,
-      title: "Repo",
-      pageTo: "/repo",
-      ionicon: "git-branch-outline",
-      boxicon: "",
-      color: "white",
-      classNames: [],
-    },
-    {
-      id: 2,
-      title: "Tech",
-      pageTo: "/tech",
-      ionicon: "build-outline",
-      boxicon: "",
-      color: "white",
-      classNames: [],
-    },
-    {
-      id: 3,
-      title: "Contact",
-      pageTo: "/contact",
-      ionicon: "help-outline",
-      boxicon: "",
-      color: "white",
-      classNames: [],
-    },
-  ];
-
-  const menu_items = menu_items_data.map((item) => {
+  const menu_items = MENU_ITEMS_DATA.map((item) => {
     return (
       <MenuItem
+        pageTo={item.pageTo}
         key={item.id}
         ionicon={item.ionicon}
         title={item.title}
