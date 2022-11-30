@@ -1,0 +1,7 @@
+- container: con
+- navbar: nav
+- section: sec
+- content: ct
+- background: bg
+- sidebar: sb
+- button: btn
