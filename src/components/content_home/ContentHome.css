@@ -1,72 +1,104 @@
 :root {
-  --dim-pfp: 200px;
+    --deco-bar-wd: 6px;
 }
 
 .ct-home {
+    margin: 1rem;
+    width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
   background-color: aquamarine;
-  display: flex;
-  flex-grow: 1;
-  align-items: stretch;
-  justify-content: stretch;
 }
 
-.ct-con-sec-pf {
-  display: flex;
-  flex-grow: 1;
-  flex-direction: column;
-  align-items: stretch;
-  justify-content: stretch;
-  background-color: cadetblue;
-}
-
-/* header containg heading and pfp */
-.head-pf {
-  display: flex;
-  flex-grow: 0.5;
-  flex-basis: 0;
-  align-items: center;
-  justify-content: space-evenly;
-  flex-direction: column;
+.sec-pf-head {
   background-color: red;
-}
-
-.head-pf > h2 {
-  align-self: flex-start;
-}
-
-.sec-pf-intro {
   display: flex;
-  flex-direction: column;
-  flex-basis: 0;
-  flex-grow: 0.5;
-  background-color: green;
-}
-
-.sec-pf-intro > ul {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  flex-grow: 1;
-  justify-content: space-evenly;
-  flex-shrink: 1;
-  list-style-type: none;
-  background-color: greenyellow;
-}
-
-.head-pf img {
-  height: var(--dim-pfp);
-  width: var(--dim-pfp);
-  object-fit: cover;
-  border-radius: 1rem;
-}
-
-/* experience section */
-.ct-con-sec-exp {
-  display: flex;
-  flex-grow: 1;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: purple;
-  flex-grow: 0.5;
+}
+
+.sec-pf-head img {
+    width: calc(100vh*0.3);
+    height: calc(100vh*0.3);
+    object-fit: cover;
+}
+
+.sec-pf-intro {
+    /* background-color: red; */
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    align-items: center;
+}
+
+.sec-pf-intro ul {
+    list-style-type: none;
+    /* flex-grow: 1;
+    background-color: red;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly; */
+}
+
+.sec-pf-exp {
+    grid-row: span 2;
+  background-color: forestgreen;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.con-exp-item {
+    display: flex;
+    
+}
+
+/* decorators for exp element */
+.deco {
+    height: 100%;
+    width: 2rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.deco-start {
+    background-color: bisque;
+}
+
+.deco-start > div {
+    height: 50%;
+    width: var(--deco-bar-wd);
+    transform: translateY(50%);
+    background-color: red;
+}
+
+.deco-default > div {
+    height: 100%;
+    width: var(--deco-bar-wd);
+    background-color: red;
+}
+
+.deco-end {
+background-color: aquamarine;
+}
+
+.deco-end > div {
+    height: 50%;
+    width: var(--deco-bar-wd);
+    transform: translateY(-50%);
+    background-color: red;
+}
+
+.deco-default {
+background-color: yellow;
+}
+
+.sec-pf-intro {
+  background-color: greenyellow;
 }
