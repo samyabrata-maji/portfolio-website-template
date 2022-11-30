@@ -7,3 +7,4 @@
 - button: btn
 - profile: pf
 - header: head
+- column: col
