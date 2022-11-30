@@ -1,14 +1,17 @@
-import React from 'react'
-import './SideBar.css'
+import React from "react";
+import { Link } from "react-router-dom";
+import "./SideBar.css";
 
 export default function MenuItem(props) {
   return (
     <li>
-        <a href="/">
-            <div className="sb-menu-box-icon"><ion-icon name={props.ionicon}  color="solid"></ion-icon></div>
-            <span className="sb-menu-items">{props.title}</span>
-        </a>
-            <span className="sb-menu-tooltip">{props.title}</span>
+      <Link to={props.pageTo}>
+        <div className="sb-menu-box-icon">
+          <ion-icon name={props.ionicon} color="solid"></ion-icon>
+        </div>
+        <span className="sb-menu-items">{props.title}</span>
+      </Link>
+      <span className="sb-menu-tooltip">{props.title}</span>
     </li>
-  )
+  );
 }

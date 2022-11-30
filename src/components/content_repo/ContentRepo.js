@@ -2,22 +2,22 @@ import React, { useEffect, useState } from "react";
 import { fetchData } from "../../fetch/fetch";
 
 // do not change the order
-import "./Content.css";
-import "./RepoItem.css"
+import "./ContentRepo.css";
 import RepoItem from "./RepoItem";
 
 export default function Content() {
-  
-  const [repo_items, setRepoItems] = useState(_ => [])
+  const [repo_items, setRepoItems] = useState((_) => []);
 
   useEffect(() => {
-    fetchData().then(data => {
-      setRepoItems(data.map(item => {
-        return <RepoItem key={item.id} data={item}></RepoItem>
-      }))
-    })
-  }, [])
-  
+    fetchData().then((data) => {
+      setRepoItems(
+        data.map((item) => {
+          return <RepoItem key={item.id} data={item}></RepoItem>;
+        })
+      );
+    });
+  }, []);
+
   return (
     <div className="content">
       <div className="content-header">

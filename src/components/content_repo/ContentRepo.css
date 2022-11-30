@@ -6,11 +6,14 @@
   /* background-color: #FFFFE0; */
   background-color: #f5f5f5;
   display: flex;
+  flex-direction: row;
 }
 
 .content {
   padding: 1.5rem 2rem;
-  overflow-y: scroll;
+  overflow: auto;
+  height: 200vh;
+  /* scroll-behavior: auto; */
 }
 .content,
 .content-section {
@@ -88,4 +91,22 @@
 .content-section-repo-icons > div {
   display: flex;
   align-items: center;
+}
+
+.content-section-repo-items a {
+  color: green;
+}
+
+.repo-icons {
+  /* background-color: #FF6766; */
+  min-width: 60%;
+  justify-content: space-evenly;
+}
+
+.repo-stars > p, .repo-stars > ion-icon {
+  color: #FF9900;
+}
+
+.repo-forks > p, .repo-forks > ion-icon {
+  color: #FF6766;
 }

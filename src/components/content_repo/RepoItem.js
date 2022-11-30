@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from "react";
-import "./RepoItem.css";
+import { GLOBAL_USERNAME } from "../../fetch/fetch";
 
 export default function RepoItem(props) {
   const [icon_group, setIconsGroup] = useState([]);
   useEffect(() => {
     let repo_name = props.data.name;
-    let username = "samyabrata-maji";
+    let username = GLOBAL_USERNAME
     let lang_url = `https://api.github.com/repos/${username}/${repo_name}/languages`;
 
     fetch(lang_url)
@@ -32,8 +32,17 @@ export default function RepoItem(props) {
               default:
                 break;
             }
+
+            // let default_color = "#868686"
+            // fetch("../../utility/color.json").then(res => {
+            //   if (res.ok) return res.json().icon_color
+            //   else throw new Error("erere")
+            // }).then(data => {
+            //   default_color = data[Math.floor(Math.random()*6)]
+            // })
+
             return (
-              <box-icon key={id++} color="#868686" type="logo" size="sm" name={item}></box-icon>
+              <box-icon key={id++} color="#013220" type="logo" size="sm" name={item}></box-icon>
             );
           });
         });
@@ -43,7 +52,7 @@ export default function RepoItem(props) {
 
   return (
     <div className="content-section-repo-item">
-      <h3>{props.data.name}</h3>
+      <h3><a href={props.data.url}>{props.data.name}</a></h3>
       <p>{props.data.description && `${props.data.description}`}</p>
       <div className="content-section-repo-icons">
         <div className="repo-icons">{icon_group}</div>
