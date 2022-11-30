@@ -1,7 +1,7 @@
 import { Route, Routes } from "react-router-dom";
-import Home from "./components/content_home/Home";
+import ContentHome from "./components/content_home/ContentHome";
 import ContentRepo from "./components/content_repo/ContentRepo";
-import Tech from "./components/content_tech/Tech";
+import ContentTech from "./components/content_tech/ContentTech";
 import SideBar from "./components/sidebar/SideBar";
 
 
@@ -10,9 +10,9 @@ function App() {
     <>
       <SideBar></SideBar>
       <Routes>
-        <Route path="/" element={<Home/>}></Route>
+        <Route path="/" element={<ContentHome/>}></Route>
         <Route path="/repo" element={<ContentRepo/>}></Route>
-        <Route path="/tech" element={<Tech/>}></Route>
+        <Route path="/tech" element={<ContentTech/>}></Route>
       </Routes>
     </>
   );
