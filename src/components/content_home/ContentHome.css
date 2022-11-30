@@ -1,0 +1,72 @@
+:root {
+  --dim-pfp: 200px;
+}
+
+.ct-home {
+  background-color: aquamarine;
+  display: flex;
+  flex-grow: 1;
+  align-items: stretch;
+  justify-content: stretch;
+}
+
+.ct-con-sec-pf {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: stretch;
+  background-color: cadetblue;
+}
+
+/* header containg heading and pfp */
+.head-pf {
+  display: flex;
+  flex-grow: 0.5;
+  flex-basis: 0;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  background-color: red;
+}
+
+.head-pf > h2 {
+  align-self: flex-start;
+}
+
+.sec-pf-intro {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 0;
+  flex-grow: 0.5;
+  background-color: green;
+}
+
+.sec-pf-intro > ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-grow: 1;
+  justify-content: space-evenly;
+  flex-shrink: 1;
+  list-style-type: none;
+  background-color: greenyellow;
+}
+
+.head-pf img {
+  height: var(--dim-pfp);
+  width: var(--dim-pfp);
+  object-fit: cover;
+  border-radius: 1rem;
+}
+
+/* experience section */
+.ct-con-sec-exp {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: purple;
+  flex-grow: 0.5;
+}
