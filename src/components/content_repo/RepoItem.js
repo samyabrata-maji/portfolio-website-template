@@ -51,10 +51,10 @@ export default function RepoItem(props) {
   }, [props, props.data.name]);
 
   return (
-    <div className="content-section-repo-item">
+    <div className="ct-sec-repo-item">
       <h3><a href={props.data.url}>{props.data.name}</a></h3>
       <p>{props.data.description && `${props.data.description}`}</p>
-      <div className="content-section-repo-icons">
+      <div className="ct-sec-repo-icons">
         <div className="repo-icons">{icon_group}</div>
         <div className="repo-stars">
           <ion-icon name="star-outline"></ion-icon>
