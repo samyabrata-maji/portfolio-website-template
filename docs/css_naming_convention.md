@@ -1,0 +1,11 @@
+- background: bg
+- button: btn
+- column: col
+- container: con
+- content: ct
+- header: head
+- icon: ic (don't change box-icons on ionicons)
+- navbar: nav
+- profile: pf
+- section: sec
+- sidebar: sb
