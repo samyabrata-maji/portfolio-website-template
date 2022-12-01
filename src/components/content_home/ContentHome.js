@@ -17,18 +17,21 @@ function ExpDeco(props) {
       return (
         <div className="deco deco-start">
           <div></div>
+          <span></span>
         </div>
       );
     case "end":
       return (
         <div className="deco deco-end">
           <div></div>
+          <span></span>
         </div>
       );
     default:
       return (
         <div className="deco deco-default">
           <div></div>
+          <span></span>
         </div>
       );
   }
@@ -44,7 +47,8 @@ function ExpItem(props) {
 }
 
 export default function ContentHome() {
-  const pfp_sammaji = require("../../assets/img/sammaji.jpg");
+  // const pfp_sammaji = require("../../assets/img/sammaji.jpg");
+  const pfp_sammaji = (<h2>Samyabrata pfp</h2>)
 
   const exp_dat = EXPERIENCE_DATA.map((_, index) => {
     return (
