@@ -47,9 +47,6 @@ function ExpItem(props) {
 }
 
 export default function ContentHome() {
-  // const pfp_sammaji = require("../../assets/img/sammaji.jpg");
-  const pfp_sammaji = (<h2>Samyabrata pfp</h2>)
-
   const exp_dat = EXPERIENCE_DATA.map((_, index) => {
     return (
       <ExpItem
@@ -72,7 +69,7 @@ export default function ContentHome() {
           Hello,
           <br /> I'm Samyabrata Maji
         </h2>
-        <img alt="profile pic" src={pfp_sammaji} height="300" />
+        <img alt="profile pic" src={`${process.env.PUBLIC_URL}/assets/img/sammaji.jpg`} height="300" />
       </div>
 
       <div className="sec-pf-exp">{exp_dat}</div>
