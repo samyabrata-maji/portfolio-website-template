@@ -19,12 +19,12 @@ export default function Content() {
   }, []);
 
   return (
-    <div className="content">
-      <div className="content-header">
+    <div className="ct">
+      <div className="ct-head">
         <h2>My Repositories</h2>
       </div>
-      <div className="content-section">
-        <div className="content-section-grid">{repo_items}</div>
+      <div className="ct-sec">
+        <div className="ct-sec-grid">{repo_items}</div>
       </div>
     </div>
   );

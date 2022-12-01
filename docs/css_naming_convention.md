@@ -1,11 +1,11 @@
-- container: con
-- navbar: nav
-- section: sec
-- content: ct
 - background: bg
-- sidebar: sb
 - button: btn
-- profile: pf
-- header: head
 - column: col
+- container: con
+- content: ct
+- header: head
 - icon: ic (don't change box-icons on ionicons)
+- navbar: nav
+- profile: pf
+- section: sec
+- sidebar: sb

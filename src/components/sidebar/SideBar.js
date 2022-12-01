@@ -36,8 +36,8 @@ export default function SideBar() {
   return (
     <div className="sb sb-passive">
         {/* <button onClick={switchTheme}>Click me</button> */}
-      <div className="sb-header">
-        <div className="sb-header-menu-button" onClick={toggleMenu}>
+      <div className="sb-head">
+        <div className="sb-head-menu-btn" onClick={toggleMenu}>
           <ion-icon
             name="chevron-forward-outline"
             id="menu-btn"
