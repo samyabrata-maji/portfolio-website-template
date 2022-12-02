@@ -1,5 +1,3 @@
-import { render } from "@testing-library/react";
-
 const USERNAME = {
   github: "samyabrata-maji",
   twitter: "sammaji15",
