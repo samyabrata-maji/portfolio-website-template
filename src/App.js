@@ -1,8 +1,9 @@
 import { Route, Routes } from "react-router-dom";
-import ContentHome from "./components/content_home/ContentHome";
-import ContentRepo from "./components/content_repo/ContentRepo";
-import ContentTech from "./components/content_tech/ContentTech";
+import Home from "./pages/page_home/Home";
+import Repo from "./pages/page_repo/Repo";
+import Tech from "./pages/page_tech/Tech";
 import SideBar from "./components/sidebar/SideBar";
+import './App.css'
 
 
 function App() {
@@ -10,9 +11,9 @@ function App() {
     <>
       <SideBar></SideBar>
       <Routes>
-        <Route path="/" element={<ContentHome/>}></Route>
-        <Route path="/repo" element={<ContentRepo/>}></Route>
-        <Route path="/tech" element={<ContentTech/>}></Route>
+        <Route path="/" element={<Home/>}></Route>
+        <Route path="/repo" element={<Repo/>}></Route>
+        <Route path="/tech" element={<Tech/>}></Route>
       </Routes>
     </>
   );

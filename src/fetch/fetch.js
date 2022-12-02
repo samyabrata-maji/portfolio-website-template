@@ -1,7 +1,4 @@
-// "use strict"
-const GLOBAL_USERNAME = "samyabrata-maji";
-const GLOBAL_USER_URL = `https://api.github.com/users/${GLOBAL_USERNAME}/repos`;
-
+import { USER_PROFILE_GITHUB, settings } from "../user";
 
 const errorMessage = (code) => {
   switch(code) {
@@ -13,9 +10,8 @@ const errorMessage = (code) => {
   }
 }
 
-// TODO: use async await
 export const fetchData = () =>
-  fetch(GLOBAL_USER_URL)
+  fetch(USER_PROFILE_GITHUB.repo_url)
     .then((response) => {
       // console.log("FETCHING..."); // TODO: remove this
       if (response.ok) return response.json();
@@ -23,7 +19,10 @@ export const fetchData = () =>
     })
     .then((data) => {
       data = data
-        // .filter((repo) => !repo.fork)
+        .filter((repo) => {
+          if (settings.showForkedRepos) return true
+          else return !repo.fork
+        })
         .map((repo) => {
           return {
             id: repo.id,
@@ -45,8 +44,7 @@ export const fetchData = () =>
     });
 
 const fetchLanguages = (repo_name) => {
-  
-  const lang_url = `https://api.github.com/repos/${GLOBAL_USERNAME}/${repo_name}/languages`;
+  const lang_url = `https://api.github.com/repos/${USER_PROFILE_GITHUB.username}/${repo_name}/languages`;
   // window.open(lang_url)
   fetch(lang_url).then(response => {
     if (response.ok) return response.json()
@@ -62,4 +60,4 @@ const fetchLanguages = (repo_name) => {
   })
 };
 
-export { fetchLanguages, GLOBAL_USERNAME};
+export { fetchLanguages };

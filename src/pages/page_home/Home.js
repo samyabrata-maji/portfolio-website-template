@@ -1,6 +1,7 @@
 import React from "react";
-import "./ContentHome.css";
-import { EXPERIENCE_DATA } from "./dat_about_me";
+import "./Home.css";
+import { EXPERIENCE_DATA } from "../../user";
+import { USERNAME } from "../../user";
 
 function ExpText() {
   return (
@@ -66,8 +67,8 @@ export default function ContentHome() {
     <div className="ct-home">
       <div className="sec-pf-head">
         <h2>
-          Hello,
-          <br /> I'm Samyabrata Maji
+          <span>Hello,</span>
+          <br /> I'm {USERNAME.name}
         </h2>
         <img alt="profile pic" src={`${process.env.PUBLIC_URL}/assets/img/sammaji.jpg`} height="300" />
       </div>
