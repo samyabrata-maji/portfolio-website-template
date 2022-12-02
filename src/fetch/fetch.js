@@ -1,4 +1,6 @@
-// "use strict"
+import { USER_PROFILE_GITHUB, settings } from "../user";
+
+
 const GLOBAL_USERNAME = "samyabrata-maji";
 const GLOBAL_USER_URL = `https://api.github.com/users/${GLOBAL_USERNAME}/repos`;
 
@@ -13,9 +15,8 @@ const errorMessage = (code) => {
   }
 }
 
-// TODO: use async await
 export const fetchData = () =>
-  fetch(GLOBAL_USER_URL)
+  fetch(USER_PROFILE_GITHUB.repo_url)
     .then((response) => {
       // console.log("FETCHING..."); // TODO: remove this
       if (response.ok) return response.json();
@@ -23,7 +24,10 @@ export const fetchData = () =>
     })
     .then((data) => {
       data = data
-        // .filter((repo) => !repo.fork)
+        .filter((repo) => {
+          if (settings.showForkedRepos) return true
+          else return !repo.fork
+        })
         .map((repo) => {
           return {
             id: repo.id,
