@@ -3,45 +3,39 @@
 }
 
 .ct-home {
+  background-color: var(--col-bg);
   margin: 1rem;
   width: 100%;
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  background-color: aquamarine;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 2fr 1fr;
 }
 
 .sec-pf-head {
-  background-color: red;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  align-items: flex-start;
+  justify-content: space-evenly;
 }
 
 .sec-pf-head img {
   width: calc(100vh * 0.3);
   height: calc(100vh * 0.3);
   object-fit: cover;
+  border-radius: 1rem;
+  box-shadow: var(--def-box-shadow);
 }
 
 .sec-pf-intro {
-  /* background-color: red; */
   list-style: none;
   display: flex;
   flex-direction: column;
   justify-content: stretch;
-  align-items: center;
+  align-items: flex-start;
 }
 
 .sec-pf-intro ul {
   list-style-type: none;
-  /* flex-grow: 1;
-    background-color: red;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly; */
 }
 
 .sec-pf-exp {
@@ -98,6 +92,3 @@
   background-color: yellow;
 }
 
-.sec-pf-intro {
-  background-color: greenyellow;
-}

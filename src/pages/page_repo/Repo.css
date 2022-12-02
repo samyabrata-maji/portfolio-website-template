@@ -4,7 +4,7 @@
 
 .main {
   /* background-color: #FFFFE0; */
-  background-color: #f5f5f5;
+  background-color: var(--col-bg);
   display: flex;
   flex-direction: row;
 }
@@ -41,7 +41,7 @@
 
   border: 1px rgba(0, 0, 0, 0.1) solid;
 
-  box-shadow: 0 0 0.15rem rgba(0, 0, 0, 0.1);
+  box-shadow: var(--def-box-shadow);
   /* box-shadow: 0 0 0.15rem rgba(0, 0, 0, 0.1),
     0.1rem 0.1rem 0.15rem rgba(0, 0, 0, 0.1); */
 }

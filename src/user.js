@@ -1,11 +1,12 @@
 const USERNAME = {
+  name: "Samyabrata Maji",
   github: "samyabrata-maji",
   twitter: "sammaji15",
   linkedin: "samyabrata-maji",
 };
 
 const USER_PROFILE_GITHUB = {
-  username: USERNAME,
+  name: USERNAME.name,
   profile_url: `https://github.com/${USERNAME.github}`,
   repo_url: `https://api.github.com/users/${USERNAME.github}/repos`,
 };
@@ -82,4 +83,4 @@ const EXPERIENCE_DATA = [
   },
 ]
 
-export { USER_PROFILE_GITHUB, MENU_DATA, EXPERIENCE_DATA, settings };
+export { USERNAME, USER_PROFILE_GITHUB, MENU_DATA, EXPERIENCE_DATA, settings };

@@ -1,7 +1,7 @@
 import React from "react";
 import "./Home.css";
-// import { EXPERIENCE_DATA } from "./dat_about_me";
 import { EXPERIENCE_DATA } from "../../user";
+import { USERNAME } from "../../user";
 
 function ExpText() {
   return (
@@ -68,7 +68,7 @@ export default function ContentHome() {
       <div className="sec-pf-head">
         <h2>
           Hello,
-          <br /> I'm Samyabrata Maji
+          <br /> I'm {USERNAME.name}
         </h2>
         <img alt="profile pic" src={`${process.env.PUBLIC_URL}/assets/img/sammaji.jpg`} height="300" />
       </div>
