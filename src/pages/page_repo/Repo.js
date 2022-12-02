@@ -1,8 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { fetchData } from "../../fetch/fetch";
-
-// do not change the order
-import "./ContentRepo.css";
+import "./Repo.css";
 import RepoItem from "./RepoItem";
 
 export default function Content() {

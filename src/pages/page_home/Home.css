@@ -1,0 +1,103 @@
+:root {
+  --deco-bar-wd: 6px;
+}
+
+.ct-home {
+  margin: 1rem;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  background-color: aquamarine;
+}
+
+.sec-pf-head {
+  background-color: red;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.sec-pf-head img {
+  width: calc(100vh * 0.3);
+  height: calc(100vh * 0.3);
+  object-fit: cover;
+}
+
+.sec-pf-intro {
+  /* background-color: red; */
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+  align-items: center;
+}
+
+.sec-pf-intro ul {
+  list-style-type: none;
+  /* flex-grow: 1;
+    background-color: red;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly; */
+}
+
+.sec-pf-exp {
+  grid-row: span 2;
+  background-color: forestgreen;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.con-exp-item {
+  display: flex;
+}
+
+/* decorators for exp element */
+.deco {
+  height: 100%;
+  width: 2rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.deco-start {
+  background-color: bisque;
+}
+
+.deco-start > div {
+  height: 50%;
+  width: var(--deco-bar-wd);
+  transform: translateY(50%);
+  background-color: red;
+}
+
+.deco-default > div {
+  height: 100%;
+  width: var(--deco-bar-wd);
+  background-color: red;
+}
+
+.deco-end {
+  background-color: aquamarine;
+}
+
+.deco-end > div {
+  height: 50%;
+  width: var(--deco-bar-wd);
+  transform: translateY(-50%);
+  background-color: red;
+}
+
+.deco-default {
+  background-color: yellow;
+}
+
+.sec-pf-intro {
+  background-color: greenyellow;
+}

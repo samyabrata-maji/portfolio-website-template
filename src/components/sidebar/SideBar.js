@@ -4,18 +4,6 @@ import "./SideBar.css";
 import { MENU_ITEMS_DATA } from "./dat_menu_items";
 
 export default function SideBar() {
-  // changing theme
-  const [theme, setTheme] = useState(() => "default");
-
-//   function switchTheme() {
-//     window.alert("click")
-//     let root = document.querySelector(":root");
-//     root.style.setProperty("--color-accent", "red");
-//     root.style.setProperty("--color-accent-sec", "green");
-//     setTheme(() => {
-//       return "light";
-//     });
-//   }
 
   const menu_items = MENU_ITEMS_DATA.map((item) => {
     return (
@@ -35,7 +23,6 @@ export default function SideBar() {
 
   return (
     <div className="sb sb-passive">
-        {/* <button onClick={switchTheme}>Click me</button> */}
       <div className="sb-head">
         <div className="sb-head-menu-btn" onClick={toggleMenu}>
           <ion-icon

@@ -1,5 +1,5 @@
 import React from "react";
-import "./ContentHome.css";
+import "./Home.css";
 import { EXPERIENCE_DATA } from "./dat_about_me";
 
 function ExpText() {
