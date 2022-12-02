@@ -25,3 +25,11 @@ body {
   width: 100%;
   overflow-y: hidden;
 }
+
+
+@media only screen and (max-width: 600px) {
+  body {
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+}

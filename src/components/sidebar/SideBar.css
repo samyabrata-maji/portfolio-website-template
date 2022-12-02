@@ -200,11 +200,6 @@
 
 /* responsive style for ELEMENT: SIDEBAR */
 @media only screen and (max-width: 600px) {
-  body {
-    overflow-x: hidden;
-    overflow-y: auto;
-  }
-
   .main {
     display: flex;
     flex-direction: column;
