@@ -9,3 +9,7 @@
 - profile: pf
 - section: sec
 - sidebar: sb
+
+
+Every component classname must start with the component name:
+eg a sidebar -> sb-con-ic (ie, sidebar -> container for icons)

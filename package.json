@@ -8,6 +8,7 @@
     "@testing-library/user-event": "^13.5.0",
     "devicon-react-svg": "^0.2.4",
     "gh-pages": "^4.0.0",
+    "mermaid": "^9.2.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.4.3",
@@ -45,7 +46,6 @@
   "directories": {
     "doc": "docs"
   },
-  "devDependencies": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/samyabrata-maji/sammaji.github.io.git"
