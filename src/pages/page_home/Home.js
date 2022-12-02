@@ -1,65 +1,24 @@
 import React from "react";
 import "./Home.css";
-import { EXPERIENCE_DATA } from "../../user";
-import { USERNAME } from "../../user";
-
-function ExpText() {
-  return (
-    <div className="sec-exp-text-con">
-      <h2>Hello</h2>
-      <p>My name is Samyabrata</p>
-    </div>
-  );
-}
-
-function ExpDeco(props) {
-  switch (props.position) {
-    case "start":
-      return (
-        <div className="deco deco-start">
-          <div></div>
-          <span></span>
-        </div>
-      );
-    case "end":
-      return (
-        <div className="deco deco-end">
-          <div></div>
-          <span></span>
-        </div>
-      );
-    default:
-      return (
-        <div className="deco deco-default">
-          <div></div>
-          <span></span>
-        </div>
-      );
-  }
-}
-
-function ExpItem(props) {
-  return (
-    <div className="con-exp-item">
-      <ExpDeco position={props.position}></ExpDeco>
-      <ExpText></ExpText>
-    </div>
-  );
-}
+import { USERNAME, JOURNEY_DATA } from "../../user";
+import JourneyList from "../../components/journey_component/JourneyList";
 
 export default function ContentHome() {
-  const exp_dat = EXPERIENCE_DATA.map((_, index) => {
+  const exp_dat = JOURNEY_DATA.map((item, index) => {
+
     return (
-      <ExpItem
+      <JourneyList
         key={index}
         position={
           index === 0
             ? "start"
-            : index === EXPERIENCE_DATA.length - 1
+            : index === JOURNEY_DATA.length - 1
             ? "end"
             : "default"
         }
-      />
+        title={item.title}
+        description={item.description}
+      ></JourneyList>
     );
   });
 
@@ -70,7 +29,11 @@ export default function ContentHome() {
           <span>Hello,</span>
           <br /> I'm {USERNAME.name}
         </h2>
-        <img alt="profile pic" src={`${process.env.PUBLIC_URL}/assets/img/sammaji.jpg`} height="300" />
+        <img
+          alt="profile pic"
+          src={`${process.env.PUBLIC_URL}/assets/img/sammaji.jpg`}
+          height="300"
+        />
       </div>
 
       <div className="sec-pf-exp">{exp_dat}</div>
