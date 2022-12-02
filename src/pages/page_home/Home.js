@@ -1,6 +1,7 @@
 import React from "react";
 import "./Home.css";
-import { EXPERIENCE_DATA } from "./dat_about_me";
+// import { EXPERIENCE_DATA } from "./dat_about_me";
+import { EXPERIENCE_DATA } from "../../user";
 
 function ExpText() {
   return (

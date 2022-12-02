@@ -13,8 +13,8 @@ const USER_PROFILE_GITHUB = {
 };
 
 const settings = {
-  showStarsCount: true,
-  showForksCount: true,
+  showStarsCount: false,
+  showForksCount: false,
   showForkedRepos: false,
 };
 
@@ -56,4 +56,32 @@ const MENU_DATA = [
   }
 ];
 
-export { USER_PROFILE_GITHUB, MENU_DATA, settings };
+// oldest to newest
+const EXPERIENCE_DATA = [
+  {
+    title: "Studied at St Patricks School",
+    description: "Did my high schooling from St. Patricks School, Asansol",
+    from: "June, 2007",
+    to: "June, 2022"
+  },
+  {
+    title: "Studied at St Patricks School",
+    description: "Did my high schooling from St. Patricks School, Asansol",
+    from: "June, 2007",
+    to: "June, 2022"
+  },
+  {
+    title: "Studied at St Patricks School",
+    description: "Did my high schooling from St. Patricks School, Asansol",
+    from: "June, 2007",
+    to: "June, 2022"
+  },
+  {
+    title: "Studied at St Patricks School",
+    description: "Did my high schooling from St. Patricks School, Asansol",
+    from: "June, 2007",
+    to: "June, 2022"
+  },
+]
+
+export { USER_PROFILE_GITHUB, MENU_DATA, EXPERIENCE_DATA, settings };

@@ -11,7 +11,7 @@
   background-color: var(--col-accent);
   height: 100vh;
   width: 80px;
-  padding: 1.2rem 1rem;
+  padding: 1rem 1rem;
   transition: all 0.5s ease;
   background-color: var(--col-accent);
 
@@ -212,26 +212,30 @@
 
   .sb {
     display: flex;
-    flex-direction: row;
+    flex-direction: row-reverse;
     height: var(--sb-icons-ht);
     width: 100vw;
     padding: 0;
+    justify-content: stretch;
     transition: all 0.5 ease;
   }
 
   .sb-active {
     height: max-content;
-    justify-content: space-evenly;
+
     transition: all 0.5 ease;
+  }
+  .sb-passive {
   }
 
   .sb-passive > .sb-menu {
-    visibility: hidden;
+    display: none;
   }
 
   .sb-menu {
-    align-self: flex-start;
-    flex: 0 0 200px;
+    flex: 1 1 0;
+    margin-left: 2rem;
+    margin-right: 2rem;
   }
 
   .sb-head-menu-btn {
