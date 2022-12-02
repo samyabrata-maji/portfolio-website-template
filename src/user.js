@@ -62,6 +62,12 @@ const JOURNEY_DATA = [
     description: "Did my high schooling from St. Patricks School, Asansol",
     from: "June, 2007",
     to: "June, 2022",
+    sub_item: {
+      title: "Std at St Patricks School",
+      description: "Did my high schooling from St. Patricks School, Asansol",
+      from: "June, 2007",
+      to: "June, 2022",
+    },
   },
   {
     title: "Studied at St Patricks School",

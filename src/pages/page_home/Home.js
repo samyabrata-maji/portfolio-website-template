@@ -5,6 +5,7 @@ import JourneyList from "../../components/journey_component/JourneyList";
 
 export default function ContentHome() {
   const exp_dat = JOURNEY_DATA.map((item, index) => {
+
     return (
       <JourneyList
         key={index}
@@ -17,7 +18,7 @@ export default function ContentHome() {
         }
         title={item.title}
         description={item.description}
-      />
+      ></JourneyList>
     );
   });
 
@@ -28,7 +29,11 @@ export default function ContentHome() {
           <span>Hello,</span>
           <br /> I'm {USERNAME.name}
         </h2>
-        <img alt="profile pic" src={`${process.env.PUBLIC_URL}/assets/img/sammaji.jpg`} height="300" />
+        <img
+          alt="profile pic"
+          src={`${process.env.PUBLIC_URL}/assets/img/sammaji.jpg`}
+          height="300"
+        />
       </div>
 
       <div className="sec-pf-exp">{exp_dat}</div>

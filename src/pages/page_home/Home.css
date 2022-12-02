@@ -1,5 +1,7 @@
 :root {
   --deco-bar-wd: 4px;
+  --home-gt-col: 1fr 1fr;
+  --home-gt-row: 2fr 1fr;
 }
 
 .ct-home {
@@ -7,8 +9,8 @@
   margin: 1rem;
   width: 100%;
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 2fr 1fr;
+  grid-template-columns: var(--home-gt-col);
+  grid-template-rows: var(--home-gt-row);
 }
 
 .sec-pf-head {
@@ -18,7 +20,7 @@
   justify-content: space-evenly;
 }
 
-.sec-pf-head h2>span {
+.sec-pf-head h2 > span {
   font-size: 2rem;
   background-color: var(--col-sec-light);
 }
@@ -95,4 +97,39 @@
   background-color: var(--col-pri);
 }
 
+@media only screen and (max-width: 875px) {
+  :root {
+    --gt-col: repeat(2, 1fr);
+  }
+}
 
+@media only screen and (max-width: 645px) {
+  :root {
+    --home-gt-col: 1fr;
+    --home-gt-row: auto;
+  }
+
+  .sec-pf-head {
+    order: 1;
+    align-items: center;
+  }
+
+  .sec-pf-head h2 {
+    margin: 3rem 0 1rem 0;
+    text-align: center;
+  }
+
+  .sec-pf-head img {
+    margin: 1rem 0 1rem 0;
+  }
+
+  .sec-pf-intro {
+    order: 2;
+    margin: 2rem 0 2rem 0;
+    align-items: center;
+    justify-content: center;
+  }
+  .sec-pf-exp {
+    order: 3;
+  }
+}
