@@ -43,7 +43,13 @@
   align-items: center;
 } */
 
-.sb-head-menu-btn {
+/* .sb-head {
+  display: flex;
+  flex-wrap: wrap;
+} */
+
+.sb-head > div {
+  padding: 0.5rem;
   display: flex;
   justify-content: center;
   align-items: center;

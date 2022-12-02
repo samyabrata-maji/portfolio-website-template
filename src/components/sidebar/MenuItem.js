@@ -3,9 +3,10 @@ import { Link } from "react-router-dom";
 import "./SideBar.css";
 
 export default function MenuItem(props) {
+  
   return (
-    <li>
-      <Link to={props.pageTo}>
+    <li id={props.id ? props.id : ""}>
+      <Link to={props.pageTo ? props.pageTo : "#"}>
         <div className="sb-menu-box-icon">
           <ion-icon name={props.ionicon} color="solid"></ion-icon>
         </div>

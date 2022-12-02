@@ -1,3 +1,5 @@
+import { render } from "@testing-library/react";
+
 const USERNAME = {
   github: "samyabrata-maji",
   twitter: "sammaji15",
@@ -21,7 +23,6 @@ const MENU_DATA = [
     title: "Home",
     pageTo: "/",
     ionicon: "home-outline",
-    boxicon: "",
     color: "white",
     classNames: [],
   },
@@ -29,7 +30,6 @@ const MENU_DATA = [
     title: "Repo",
     pageTo: "/repo",
     ionicon: "git-branch-outline",
-    boxicon: "",
     color: "white",
     classNames: [],
   },
@@ -37,7 +37,6 @@ const MENU_DATA = [
     title: "Tech",
     pageTo: "/tech",
     ionicon: "build-outline",
-    boxicon: "",
     color: "white",
     classNames: [],
   },
@@ -45,10 +44,16 @@ const MENU_DATA = [
     title: "Contact",
     pageTo: "/contact",
     ionicon: "help-outline",
-    boxicon: "",
     color: "white",
     classNames: [],
   },
+  {
+    title: "Themes",
+    ionicon: "sunny-outline",
+    color: "white",
+    classNames: [],
+    id: 'btn-toggle-theme'
+  }
 ];
 
 export { USER_PROFILE_GITHUB, MENU_DATA, settings };
