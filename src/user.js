@@ -51,36 +51,36 @@ const MENU_DATA = [
     ionicon: "sunny-outline",
     color: "white",
     classNames: [],
-    id: 'btn-toggle-theme'
-  }
+    id: "btn-toggle-theme",
+  },
 ];
 
 // oldest to newest
-const EXPERIENCE_DATA = [
+const JOURNEY_DATA = [
   {
     title: "Studied at St Patricks School",
     description: "Did my high schooling from St. Patricks School, Asansol",
     from: "June, 2007",
-    to: "June, 2022"
+    to: "June, 2022",
   },
   {
     title: "Studied at St Patricks School",
     description: "Did my high schooling from St. Patricks School, Asansol",
     from: "June, 2007",
-    to: "June, 2022"
+    to: "June, 2022",
   },
   {
     title: "Studied at St Patricks School",
     description: "Did my high schooling from St. Patricks School, Asansol",
     from: "June, 2007",
-    to: "June, 2022"
+    to: "June, 2022",
   },
   {
     title: "Studied at St Patricks School",
     description: "Did my high schooling from St. Patricks School, Asansol",
     from: "June, 2007",
-    to: "June, 2022"
+    to: "June, 2022",
   },
-]
+];
 
-export { USERNAME, USER_PROFILE_GITHUB, MENU_DATA, EXPERIENCE_DATA, settings };
+export { USERNAME, USER_PROFILE_GITHUB, MENU_DATA, JOURNEY_DATA, settings };
