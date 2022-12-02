@@ -1,15 +1,15 @@
 import React, { useState } from "react";
 import MenuItem from "./MenuItem";
 import "./SideBar.css";
-import { MENU_ITEMS_DATA } from "./dat_menu_items";
+import { MENU_DATA } from "../../user";
 
 export default function SideBar() {
 
-  const menu_items = MENU_ITEMS_DATA.map((item) => {
+  const menu_items = MENU_DATA.map((item,index) => {
     return (
       <MenuItem
         pageTo={item.pageTo}
-        key={item.id}
+        key={index}
         ionicon={item.ionicon}
         title={item.title}
       ></MenuItem>
