@@ -85,10 +85,11 @@
   min-width: 60%;
   width: 80%;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
 }
 
 .ct-sec-repo-icons > div {
+  margin: 0.5rem;
   display: flex;
   align-items: center;
 }
