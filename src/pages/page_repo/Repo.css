@@ -94,8 +94,13 @@
   align-items: center;
 }
 
-.ct-sec-repo-items a {
-  color: green;
+.ct-sec-repo-item a {
+  color: var(--col-sec);
+  text-decoration: none;
+}
+.ct-sec-repo-item a:hover {
+  /* background-color: var(--col-sec-light); */
+  text-decoration: underline;
 }
 
 .repo-icons {

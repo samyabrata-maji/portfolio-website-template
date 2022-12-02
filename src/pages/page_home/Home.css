@@ -1,5 +1,5 @@
 :root {
-  --deco-bar-wd: 6px;
+  --deco-bar-wd: 4px;
 }
 
 .ct-home {
@@ -7,7 +7,7 @@
   margin: 1rem;
   width: 100%;
   display: grid;
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: 1fr 1fr;
   grid-template-rows: 2fr 1fr;
 }
 
@@ -16,6 +16,11 @@
   flex-direction: column;
   align-items: flex-start;
   justify-content: space-evenly;
+}
+
+.sec-pf-head h2>span {
+  font-size: 2rem;
+  background-color: var(--col-sec-light);
 }
 
 .sec-pf-head img {
@@ -38,9 +43,12 @@
   list-style-type: none;
 }
 
+.sec-pf-intro h2 {
+  background-color: var(--col-sec-light);
+}
+
 .sec-pf-exp {
   grid-row: span 2;
-  background-color: forestgreen;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -54,41 +62,37 @@
 .deco {
   height: 100%;
   width: 2rem;
-
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.deco-start {
-  background-color: bisque;
+.deco > span {
+  background-color: var(--col-pri);
+  height: 12px;
+  width: 12px;
+  border-radius: 50%;
+  position: absolute;
 }
 
 .deco-start > div {
   height: 50%;
   width: var(--deco-bar-wd);
   transform: translateY(50%);
-  background-color: red;
+  background-color: var(--col-pri);
 }
 
 .deco-default > div {
   height: 100%;
   width: var(--deco-bar-wd);
-  background-color: red;
-}
-
-.deco-end {
-  background-color: aquamarine;
+  background-color: var(--col-pri);
 }
 
 .deco-end > div {
   height: 50%;
   width: var(--deco-bar-wd);
   transform: translateY(-50%);
-  background-color: red;
+  background-color: var(--col-pri);
 }
 
-.deco-default {
-  background-color: yellow;
-}
 

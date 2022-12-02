@@ -13,10 +13,11 @@
 
 
 :root {
-
   --def-box-shadow: 0 0 0.15rem rgba(0, 0, 0, 0.1);
 
   /* default theme */
+  --col-pri: #9FC131;
+  --col-pri-sec: #DBF227;
   --col-sec: #012030;
   --col-sec-light: #DAFDBA;
   --col-accent: #11101d;
@@ -28,9 +29,6 @@
   --sb-icons-ht: 50px;
   --sb-navbar-wd: 80px;
 }
-
-
-
 
 
 html {
