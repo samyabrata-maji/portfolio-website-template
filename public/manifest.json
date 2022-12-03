@@ -1,0 +1,9 @@
+{
+  "short_name": "Samyabrata Maji",
+  "name": "Personal Website to showcase all my work",
+  "icons": [],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}
