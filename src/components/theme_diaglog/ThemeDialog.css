@@ -1,0 +1,54 @@
+.diag {
+  position: absolute;
+  height: 50vh;
+  width: 300px;
+  background-color: var(--col-sec-light);
+  padding: 2rem;
+  border-radius: 0.5rem;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  top: 50vh;
+  transform: translateY(-50%);
+  box-shadow: var(--def-box-shadow);
+  z-index: 100;
+}
+
+.diag-hide {
+    display: none;
+}
+
+.diag ul {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    list-style: none;
+}
+
+#btn-close-diag {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    transform: translateX(-2rem);
+    position: relative;
+    right: 0;
+    left: 100%;
+    width: fit-content;
+}
+
+.diag button {
+    font-size: 1.2rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border: none;
+    width: 100%;
+    border-radius: 0.5rem;
+    background-color: transparent;
+}
+
+.diag button:hover {
+    background-color: var(--col-pri);
+    box-shadow: var(--def-box-shadow);
+}
+
+
+

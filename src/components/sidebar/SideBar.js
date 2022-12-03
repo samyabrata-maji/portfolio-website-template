@@ -2,16 +2,9 @@ import React, { useEffect, useState } from "react";
 import MenuItem from "./MenuItem";
 import "./SideBar.css";
 import { MENU_DATA } from "../../user";
+import ThemeDialog from "../theme_diaglog/ThemeDialog";
 
 export default function SideBar() {
-  useEffect(() => {
-    const btnToggleTheme = document.getElementById("btn-toggle-theme");
-    btnToggleTheme.onclick = () => {
-      // dialog to switch themes
-      // document.querySelector(':root').style.setProperty('--col-accent', '#fffff')
-    };
-  }, []);
-
   const menu_items = MENU_DATA.map((item, index) => {
     return (
       <MenuItem
@@ -24,9 +17,14 @@ export default function SideBar() {
     );
   });
 
-  function toggleDarkTheme() {
-    // document.querySelector(':root').style.setProperty()
-  }
+  const { theme, setTheme } = useState("default");
+  const theme_dialog = <ThemeDialog />;
+  useEffect(() => {
+    const btnToggleTheme = document.getElementById("btn-toggle-theme");
+    btnToggleTheme.onclick = () => {
+      document.querySelector('.diag').classList.toggle('diag-hide')
+    };
+  }, []);
 
   function toggleMenu() {
     document.querySelector(".main .sb").classList.toggle("sb-active");
@@ -34,18 +32,20 @@ export default function SideBar() {
   }
 
   return (
-    <div className="sb sb-passive">
-      <div className="sb-head">
-        <div className="sb-head-menu-btn" onClick={toggleMenu}>
-          <ion-icon
-            name="chevron-forward-outline"
-            id="menu-btn"
-            color="white"
-          ></ion-icon>
+    <>
+      {theme_dialog}
+      <div className="sb sb-passive">
+        <div className="sb-head">
+          <div className="sb-head-menu-btn" onClick={toggleMenu}>
+            <ion-icon
+              name="chevron-forward-outline"
+              id="menu-btn"
+              color="white"
+            ></ion-icon>
+          </div>
         </div>
+        <ul className="sb-menu">{menu_items}</ul>
       </div>
-
-      <ul className="sb-menu">{menu_items}</ul>
-    </div>
+    </>
   );
 }

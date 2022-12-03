@@ -128,7 +128,7 @@
   border-radius: var(--nav-border);
   outline: none;
   border: none;
-  background-color: var(--col-accent-sec);
+  background-color: var(--col-accent-light);
   font-size: 18px;
   color: #fff;
 }

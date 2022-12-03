@@ -18,11 +18,11 @@
 
   /* default theme */
   --col-pri: #9FC131;
-  --col-pri-sec: #DBF227;
+  --col-pri-light: #DBF227;
   --col-sec: #012030;
   --col-sec-light: #DAFDBA;
   --col-accent: #11101d;
-  --col-accent-sec: #1d1b31;
+  --col-accent-light: #1d1b31;
   --col-bg: #f5f5f5;
 
   /* DIMENSIONS */

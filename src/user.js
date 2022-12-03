@@ -60,26 +60,27 @@ const JOURNEY_DATA = [
   {
     title: "Studied at St Patricks School",
     description: "Did my high schooling from St. Patricks School, Asansol",
-    from: "June, 2007",
-    to: "June, 2022",
+    // from: "June, 2007",
+    // to: "June, 2022",
   },
   {
     title: "Got into Game Development",
-    description: "Learned basics of blender. Started using unity and C#. Finally switched to Unreal Engine",
-    from: "June, 2007",
-    to: "June, 2022",
+    description:
+      "Learned basics of blender. Started using unity and C#. Finally switched to Unreal Engine",
+    // from: "June, 2007",
+    // to: "June, 2022",
   },
   {
     title: "Started Learing Web Development",
     description: "Learned JavaScript, TypeScript, React, ",
-    from: "June, 2007",
-    to: "June, 2022",
+    // from: "June, 2007",
+    // to: "June, 2022",
   },
   {
     title: "Pursuing BTech. in CSE",
     description: "From Maulana Abul Kalam University of Technology",
-    from: "June, 2007",
-    to: "June, 2022",
+    // from: "June, 2007",
+    // to: "June, 2022",
   },
 ];
 
@@ -98,11 +99,47 @@ const TECH_STACK_DATA = [
   { title: "html5" },
 ];
 
+/** order of values
+ * values: [pri, priLight, sec, secLight, accent, accentLight, bg, ]
+ */
+let theme_index = 0;
+const THEME = [
+  {
+    id: "th00",
+    index: theme_index++,
+    title: "Default",
+    value: [
+      "#9FC131",
+      "#DBF227",
+      "#012030",
+      "#DAFDBA",
+      "#11101d",
+      "#1d1b31",
+      "#f5f5f5",
+    ],
+  },
+  {
+    id: "th01",
+    index: theme_index++,
+    title: "Dark Mode",
+    value: [
+      "#9FC131",
+      "#DBF227",
+      "#012030",
+      "#DAFDBA",
+      "#11101d",
+      "red",
+      "#014029",
+    ],
+  },
+];
+
 export {
   USERNAME,
   USER_PROFILE_GITHUB,
   MENU_DATA,
   JOURNEY_DATA,
   TECH_STACK_DATA,
+  THEME,
   settings,
 };
