@@ -37,8 +37,8 @@ To add your own repository, go to `src/user.js` and add your github username.
 
 ```javascript
 const USERNAME = {
-  github: "samyabrata-maji",
-  twitter: "sammaji15",
+  github: "samyabrata-maji", // <-- add your github username here
+  twitter: "sammaji15", // <-- add your twitter username here and so on...
   linkedin: "samyabrata-maji",
 };
 ```
