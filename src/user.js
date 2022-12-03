@@ -89,4 +89,26 @@ const JOURNEY_DATA = [
   },
 ];
 
-export { USERNAME, USER_PROFILE_GITHUB, MENU_DATA, JOURNEY_DATA, settings };
+const TECH_STACK_DATA = [
+  { title: "java" },
+  { title: "react" },
+  { title: "javascript" },
+  { title: "typescript" },
+  { title: "python" },
+  { title: "kotlin" },
+  { title: "android studio" },
+  { title: "opencv" },
+  { title: "blender" },
+  { title: "c#" },
+  { title: "css3" },
+  { title: "html5" },
+];
+
+export {
+  USERNAME,
+  USER_PROFILE_GITHUB,
+  MENU_DATA,
+  JOURNEY_DATA,
+  TECH_STACK_DATA,
+  settings,
+};
