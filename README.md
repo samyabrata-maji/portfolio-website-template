@@ -43,7 +43,7 @@ const USERNAME = {
 };
 ```
 
-This will shows all your public repositiories in the repos page. You can also what to display. For example, to include forked repositories, just include `showForkedRepos: true` in `settings`
+You can also customize some properties in `user.js`. For example, to include forked repositories, just include `showForkedRepos: true` in `settings`
 
 ```javascript
 const settings = {
