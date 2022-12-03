@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import MenuItem from "./MenuItem";
 import "./SideBar.css";
 import { MENU_DATA } from "../../user";
@@ -17,12 +17,11 @@ export default function SideBar() {
     );
   });
 
-  const { theme, setTheme } = useState("default");
   const theme_dialog = <ThemeDialog />;
   useEffect(() => {
     const btnToggleTheme = document.getElementById("btn-toggle-theme");
     btnToggleTheme.onclick = () => {
-      document.querySelector('.diag').classList.toggle('diag-hide')
+      document.querySelector(".diag").classList.toggle("diag-hide");
     };
   }, []);
 
