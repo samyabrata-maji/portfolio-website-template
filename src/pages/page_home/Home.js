@@ -1,11 +1,16 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./Home.css";
 import { USERNAME, JOURNEY_DATA } from "../../user";
 import JourneyList from "../../components/journey_component/JourneyList";
+import Dialog from "../../components/dialog/Dialog";
 
 export default function ContentHome() {
-  const exp_dat = JOURNEY_DATA.map((item, index) => {
 
+  useEffect(_ => {
+    window.alert('This website is still in development')
+  })
+
+  const exp_dat = JOURNEY_DATA.map((item, index) => {
     return (
       <JourneyList
         key={index}

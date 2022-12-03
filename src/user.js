@@ -64,14 +64,14 @@ const JOURNEY_DATA = [
     to: "June, 2022",
   },
   {
-    title: "Studied at St Patricks School",
-    description: "Did my high schooling from St. Patricks School, Asansol",
+    title: "Got into Game Development",
+    description: "Learned basics of blender. Started using unity and C#. Finally switched to Unreal Engine",
     from: "June, 2007",
     to: "June, 2022",
   },
   {
     title: "Started Learing Web Development",
-    description: "Did my high schooling from St. Patricks School, Asansol",
+    description: "Learned JavaScript, TypeScript, React, ",
     from: "June, 2007",
     to: "June, 2022",
   },
