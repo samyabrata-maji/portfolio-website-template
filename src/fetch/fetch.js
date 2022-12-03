@@ -3,7 +3,10 @@ import { USER_PROFILE_GITHUB, settings } from "../user";
 const errorMessage = (code) => {
   switch(code) {
     case '403':
-      console.error(`${code}: FORBIDDEN ACCESS: your API fetching limit has exceeded please wait for 1 min and try again`)
+      console.error(`${code} FORBIDDEN ACCESS: your API fetching limit has exceeded please wait for some time and try again`)
+      break
+    case '404':
+      console.error(`${code} PAGE NOT FOUND`)
       break
     default:
       console.error(`${code}: UNKNOWN ERROR`)
@@ -13,7 +16,6 @@ const errorMessage = (code) => {
 export const fetchData = () =>
   fetch(USER_PROFILE_GITHUB.repo_url)
     .then((response) => {
-      // console.log("FETCHING..."); // TODO: remove this
       if (response.ok) return response.json();
       else throw new Error(response.status);
     })
@@ -45,7 +47,6 @@ export const fetchData = () =>
 
 const fetchLanguages = (repo_name) => {
   const lang_url = `https://api.github.com/repos/${USER_PROFILE_GITHUB.username}/${repo_name}/languages`;
-  // window.open(lang_url)
   fetch(lang_url).then(response => {
     if (response.ok) return response.json()
     else throw new Error(response.status)
