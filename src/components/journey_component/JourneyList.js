@@ -5,6 +5,7 @@ function Text(props) {
     <div className="sec-exp-text-con">
       <h2>{props.title}</h2>
       <p>{props.description}</p>
+      {/* <p>{`Date: ${props.from} - ${props.to}`}</p> */}
     </div>
   );
 }
@@ -50,6 +51,8 @@ export default function JourneyList(props) {
               : "default"
           }
           title={item.title}
+          to={item.to}
+          from={item.from}
           description={item.description}
         />
       );

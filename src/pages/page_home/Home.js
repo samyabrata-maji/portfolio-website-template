@@ -18,6 +18,8 @@ export default function ContentHome() {
         }
         title={item.title}
         description={item.description}
+        to={item.to}
+        from={item.from}
       ></JourneyList>
     );
   });
@@ -41,9 +43,10 @@ export default function ContentHome() {
       <div className="sec-pf-intro">
         <h2>About Me</h2>
         <ul>
+          <li>Learner</li>
+          <li>Open Source Enthusiast</li>
           <li>Web Developer</li>
-          <li>Android Developer</li>
-          <li>Loves Tech</li>
+          <li>Interested in Dev Ops</li>
         </ul>
       </div>
     </div>

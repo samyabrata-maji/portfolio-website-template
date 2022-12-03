@@ -39,13 +39,13 @@ const MENU_DATA = [
     color: "white",
     classNames: [],
   },
-  {
-    title: "Contact",
-    pageTo: "/contact",
-    ionicon: "help-outline",
-    color: "white",
-    classNames: [],
-  },
+  // {
+  //   title: "Contact",
+  //   pageTo: "/contact",
+  //   ionicon: "help-outline",
+  //   color: "white",
+  //   classNames: [],
+  // },
   {
     title: "Themes",
     ionicon: "sunny-outline",
@@ -62,12 +62,6 @@ const JOURNEY_DATA = [
     description: "Did my high schooling from St. Patricks School, Asansol",
     from: "June, 2007",
     to: "June, 2022",
-    sub_item: {
-      title: "Std at St Patricks School",
-      description: "Did my high schooling from St. Patricks School, Asansol",
-      from: "June, 2007",
-      to: "June, 2022",
-    },
   },
   {
     title: "Studied at St Patricks School",
@@ -76,14 +70,14 @@ const JOURNEY_DATA = [
     to: "June, 2022",
   },
   {
-    title: "Studied at St Patricks School",
+    title: "Started Learing Web Development",
     description: "Did my high schooling from St. Patricks School, Asansol",
     from: "June, 2007",
     to: "June, 2022",
   },
   {
-    title: "Studied at St Patricks School",
-    description: "Did my high schooling from St. Patricks School, Asansol",
+    title: "Pursuing BTech. in CSE",
+    description: "From Maulana Abul Kalam University of Technology",
     from: "June, 2007",
     to: "June, 2022",
   },
