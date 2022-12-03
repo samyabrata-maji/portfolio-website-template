@@ -25,28 +25,9 @@
   width: 240px;
 }
 
-#menu-btn {
-  /* transform: rotate(180deg); */
-  transition: all 0.5 ease;
-}
-
 .sb-active #menu-btn {
   transform: rotate(180deg);
-  transition: all 0.5 ease;
 }
-
-/* .sb .sb-head .sb-head-logo {
-  color: #fff;
-  display: flex;
-  height: 50px;
-  width: 100%;
-  align-items: center;
-} */
-
-/* .sb-head {
-  display: flex;
-  flex-wrap: wrap;
-} */
 
 .sb-head > div {
   padding: 0.5rem;
@@ -61,8 +42,7 @@
   cursor: pointer;
 }
 
-/* menu toggle button */
-.sb #menu-btn {
+.sb ion-icon {
   font-size: 1.5rem;
 }
 
@@ -73,12 +53,7 @@
 
 /* MENU ITEMS */
 .sb ul {
-  /* margin-top: 2rem; */
   height: 80vh;
-  /* position: fixed;
-    top: 0;
-    left: 0;
-    right: 0; */
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -209,7 +184,7 @@
     display: flex;
     flex-direction: row-reverse;
     height: var(--sb-icons-ht);
-    width: 100vw;
+    width: 100%;
     padding: 0;
     justify-content: stretch;
     transition: all 0.5 ease;
@@ -219,8 +194,6 @@
     height: max-content;
 
     transition: all 0.5 ease;
-  }
-  .sb-passive {
   }
 
   .sb-passive > .sb-menu {

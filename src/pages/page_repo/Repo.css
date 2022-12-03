@@ -58,6 +58,11 @@
   }
 }
 
+h2 {
+  font-size: 1.8rem;
+}
+
+
 /* REPO ITEMS */
 .ct-sec-repo-item {
   display: flex;
@@ -68,6 +73,7 @@
 }
 
 .ct-sec-repo-item > p {
+  font-size: 1.1rem;
   --max-lines: 4;
   margin-top: 0.5rem;
   margin-bottom: 0.75rem;
@@ -95,6 +101,7 @@
 }
 
 .ct-sec-repo-item a {
+  font-size: 1.4rem;
   color: var(--col-sec);
   text-decoration: none;
 }
