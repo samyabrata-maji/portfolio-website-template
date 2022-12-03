@@ -12,8 +12,8 @@ const USER_PROFILE_GITHUB = {
 };
 
 const settings = {
-  showStarsCount: false,
-  showForksCount: false,
+  showStarsCount: true,
+  showForksCount: true,
   showForkedRepos: false,
 };
 
