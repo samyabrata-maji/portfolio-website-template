@@ -37,19 +37,13 @@ function Deco(props) {
 }
 
 export default function JourneyList(props) {
+  
   let sub_item = props.sub_item;
   if (sub_item) {
     sub_item = sub_item.map((item, index) => {
       return (
         <JourneyList
           key={index}
-          position={
-            index === 0
-              ? "start"
-              : index === item.length - 1
-              ? "end"
-              : "default"
-          }
           title={item.title}
           to={item.to}
           from={item.from}
@@ -65,9 +59,7 @@ export default function JourneyList(props) {
         <Deco position={props.position}></Deco>
         <Text title={props.title} description={props.description}></Text>
       </div>
-      <div>
-        {sub_item}
-      </div>
+      <div>{sub_item}</div>
     </>
   );
 }
