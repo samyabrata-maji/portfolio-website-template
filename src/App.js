@@ -7,9 +7,6 @@ import SideBar from "./components/sidebar/SideBar";
 import './App.css'
 
 function App() {
-  // useEffect((_) => {
-  //   window.alert("This website is still under development");
-  // });
   return (
     <>
       <SideBar></SideBar>
