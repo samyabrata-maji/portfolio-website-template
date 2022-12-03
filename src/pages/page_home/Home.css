@@ -1,12 +1,20 @@
 :root {
   --deco-bar-wd: 4px;
-  --home-gt-col: 1fr 1fr;
+  --home-gt-col: 1fr 1.2fr;
   --home-gt-row: 2fr 1fr;
+}
+h2 {
+  font-size: 1.5rem;
+}
+
+p {
+  font-size: 1rem;
 }
 
 .ct-home {
+  padding-left: clamp(1rem, 10%, 4rem);
+  padding-right: clamp(1rem, 10%, 4rem);
   background-color: var(--col-bg);
-  margin: 1rem;
   width: 100%;
   display: grid;
   grid-template-columns: var(--home-gt-col);
@@ -63,6 +71,14 @@
 .sec-exp-text-con {
   padding-top: 1rem;
   padding-bottom: 1rem;
+}
+
+.sec-exp-text-con h2 {
+  font-size: 1.8rem;
+}
+
+.sec-exp-text-con p {
+  font-size: 1.2rem;
 }
 
 /* decorators for exp element */
