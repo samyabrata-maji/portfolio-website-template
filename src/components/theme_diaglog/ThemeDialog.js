@@ -16,10 +16,7 @@ export default function ThemeDialog() {
 
   useEffect(
     (_) => {
-      // change theme
-      console.log("change");
       const root = document.querySelector(":root");
-
       /** order of values
        * values: [pri, priLight, sec, secLight, accent, accentLight, bg, ]
        */

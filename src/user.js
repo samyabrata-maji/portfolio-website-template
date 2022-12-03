@@ -132,6 +132,36 @@ const THEME = [
       "#014029",
     ],
   },
+  {
+    // TODO: change in all the themes below
+    id: "th03",
+    index: theme_index++,
+    title: "Vibrant",
+    value: [
+      "#9FC131",
+      "#DBF227",
+      "#012030",
+      "#DAFDBA",
+      "#11101d",
+      "#1d1b31",
+      "#f5f5f5",
+    ],
+  },
+  {
+    id: "th04",
+    index: theme_index++,
+    title: "Soft",
+    value: [
+      "#9FC131",
+      "#DBF227",
+      "#012030",
+      "#DAFDBA",
+      "#11101d",
+      "#1d1b31",
+      "#f5f5f5",
+    ],
+    shadow: ''
+  },
 ];
 
 export {
