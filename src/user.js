@@ -12,8 +12,8 @@ const USER_PROFILE_GITHUB = {
 };
 
 const settings = {
-  showStarsCount: false,
-  showForksCount: false,
+  showStarsCount: true,
+  showForksCount: true,
   showForkedRepos: false,
 };
 
@@ -39,13 +39,13 @@ const MENU_DATA = [
     color: "white",
     classNames: [],
   },
-  {
-    title: "Contact",
-    pageTo: "/contact",
-    ionicon: "help-outline",
-    color: "white",
-    classNames: [],
-  },
+  // {
+  //   title: "Contact",
+  //   pageTo: "/contact",
+  //   ionicon: "help-outline",
+  //   color: "white",
+  //   classNames: [],
+  // },
   {
     title: "Themes",
     ionicon: "sunny-outline",
@@ -62,31 +62,47 @@ const JOURNEY_DATA = [
     description: "Did my high schooling from St. Patricks School, Asansol",
     from: "June, 2007",
     to: "June, 2022",
-    sub_item: {
-      title: "Std at St Patricks School",
-      description: "Did my high schooling from St. Patricks School, Asansol",
-      from: "June, 2007",
-      to: "June, 2022",
-    },
   },
   {
-    title: "Studied at St Patricks School",
-    description: "Did my high schooling from St. Patricks School, Asansol",
+    title: "Got into Game Development",
+    description: "Learned basics of blender. Started using unity and C#. Finally switched to Unreal Engine",
     from: "June, 2007",
     to: "June, 2022",
   },
   {
-    title: "Studied at St Patricks School",
-    description: "Did my high schooling from St. Patricks School, Asansol",
+    title: "Started Learing Web Development",
+    description: "Learned JavaScript, TypeScript, React, ",
     from: "June, 2007",
     to: "June, 2022",
   },
   {
-    title: "Studied at St Patricks School",
-    description: "Did my high schooling from St. Patricks School, Asansol",
+    title: "Pursuing BTech. in CSE",
+    description: "From Maulana Abul Kalam University of Technology",
     from: "June, 2007",
     to: "June, 2022",
   },
 ];
 
-export { USERNAME, USER_PROFILE_GITHUB, MENU_DATA, JOURNEY_DATA, settings };
+const TECH_STACK_DATA = [
+  { title: "java" },
+  { title: "react" },
+  { title: "javascript" },
+  { title: "typescript" },
+  { title: "python" },
+  { title: "kotlin" },
+  { title: "android studio" },
+  { title: "opencv" },
+  { title: "blender" },
+  { title: "c#" },
+  { title: "css3" },
+  { title: "html5" },
+];
+
+export {
+  USERNAME,
+  USER_PROFILE_GITHUB,
+  MENU_DATA,
+  JOURNEY_DATA,
+  TECH_STACK_DATA,
+  settings,
+};

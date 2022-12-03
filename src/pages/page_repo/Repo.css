@@ -11,7 +11,7 @@
 
 .ct {
   padding: 1.5rem 2rem;
-  overflow: auto;
+  overflow-y: auto;
   height: 200vh;
   /* scroll-behavior: auto; */
 }
