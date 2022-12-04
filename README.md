@@ -30,6 +30,10 @@ npm run build
 serve -s build
 ```
 
+## Preview
+![Home Component](./prototype_and_preview/preview/PreviewHome.png)
+![Repositories Component](./prototype_and_preview/preview/PreviewRepo.png)
+
 
 ## Customize Website
 
