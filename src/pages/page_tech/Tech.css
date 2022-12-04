@@ -22,7 +22,7 @@
 .ct-tech > ul > li {
     border-radius: 1rem;
     box-shadow: var(--def-box-shadow);
-    background-color: white;
+    background-color: var(--col-accent-light);
     display: flex;
     align-items: center;
     justify-content: center;

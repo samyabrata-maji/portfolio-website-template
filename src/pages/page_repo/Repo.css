@@ -3,7 +3,6 @@
 }
 
 .main {
-  /* background-color: #FFFFE0; */
   background-color: var(--col-bg);
   display: flex;
   flex-direction: row;
@@ -35,7 +34,7 @@
 }
 
 .ct-sec-grid > div {
-  background-color: #fff;
+  background-color: var(--col-accent-light);
   /* border: black 1px solid; */
   border-radius: 0.5rem;
 

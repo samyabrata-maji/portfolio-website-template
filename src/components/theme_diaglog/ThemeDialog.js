@@ -5,14 +5,9 @@ import "./ThemeDialog.css";
 export default function ThemeDialog() {
   const [themeIndex, setTheme] = useState(0);
 
-  function toggleThemeDialog() {
-    document.querySelector(".diag").classList.toggle("diag-hide");
-  }
+  const toggleThemeDialog = () => document.querySelector(".diag").classList.toggle("diag-show");
 
-  const switchTheme = (event) => {
-    console.log(event.target.value);
-    setTheme((_) => event.target.value);
-  };
+  const switchTheme = (event) => setTheme((_) => event.target.value);
 
   useEffect(
     (_) => {
@@ -26,7 +21,9 @@ export default function ThemeDialog() {
       root.style.setProperty("--col-sec-light", THEME[themeIndex].value[3]);
       root.style.setProperty("--col-accent", THEME[themeIndex].value[4]);
       root.style.setProperty("--col-accent-light", THEME[themeIndex].value[5]);
-      root.style.setProperty("--col-bg", THEME[themeIndex].value[6]);
+      root.style.setProperty("--col-text", THEME[themeIndex].value[6]);
+      root.style.setProperty("--col-text-alt", THEME[themeIndex].value[7]);
+      root.style.setProperty("--col-bg", THEME[themeIndex].value[8]);
     },
     [themeIndex]
   );
