@@ -100,7 +100,8 @@ const TECH_STACK_DATA = [
 ];
 
 /** order of values
- * values: [pri, priLight, sec, secLight, accent, accentLight, bg, ]
+ * values: [pri, priLight, sec, secLight, accent, accentLight, text, textAlt, bg ]
+ * Also enable the "COLOR HIGHLIGHTING" extension, if you are using vs code
  */
 let theme_index = 0;
 const THEME = [
@@ -114,7 +115,9 @@ const THEME = [
       "#012030",
       "#DAFDBA",
       "#11101d",
-      "#1d1b31",
+      "#ffffff",
+      "#11101d",
+      "#11101d",
       "#f5f5f5",
     ],
   },
@@ -123,44 +126,63 @@ const THEME = [
     index: theme_index++,
     title: "Dark Mode",
     value: [
-      "#9FC131",
-      "#DBF227",
+      "#D1DADF",
+      "#08AAFF",
       "#012030",
-      "#DAFDBA",
-      "#11101d",
-      "red",
-      "#014029",
+      "#375462",
+      "#375462",
+      "#375462",
+      "#D1DADF",
+      "#E7ECEE",
+      "#002134",
     ],
   },
-  {
-    // TODO: change in all the themes below
-    id: "th03",
-    index: theme_index++,
-    title: "Vibrant",
-    value: [
-      "#9FC131",
-      "#DBF227",
-      "#012030",
-      "#DAFDBA",
-      "#11101d",
-      "#1d1b31",
-      "#f5f5f5",
-    ],
-  },
+  // {
+  //   // TODO: change in all the themes below
+  //   id: "th03",
+  //   index: theme_index++,
+  //   title: "Vibrant",
+  //   value: [
+  //     "#9FC131",
+  //     "#DBF227",
+  //     "#012030",
+  //     "#DAFDBA",
+  //     "#11101d",
+  //     "#1d1b31",
+  //     "#f5f5f5",
+  //   ],
+  // },
   {
     id: "th04",
     index: theme_index++,
     title: "Soft",
     value: [
-      "#9FC131",
-      "#DBF227",
+      "#318CFC",
+      "#3098F2",
       "#012030",
-      "#DAFDBA",
+      "#DFE6EE",
       "#11101d",
-      "#1d1b31",
-      "#f5f5f5",
+      "#ffffff",
+      "#11101d",
+      "#11101d",
+      "##EDF2F7",
+    ]
+  },
+  {
+    id: "th05",
+    index: theme_index++,
+    title: "Blueish",
+    value: [
+      "#395B64",
+      "#395B64",
+      "#395B64",
+      "#A5C9CA",
+      "#395B64",
+      "#A5C9CA",
+      "#11101d",
+      "#11101d",
+      "#E7F6F2",
     ],
-    shadow: ''
   },
 ];
 

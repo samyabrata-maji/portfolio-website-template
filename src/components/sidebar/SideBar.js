@@ -21,7 +21,7 @@ export default function SideBar() {
   useEffect(() => {
     const btnToggleTheme = document.getElementById("btn-toggle-theme");
     btnToggleTheme.onclick = () => {
-      document.querySelector(".diag").classList.toggle("diag-hide");
+      document.querySelector(".diag").classList.toggle("diag-show");
     };
   }, []);
 
