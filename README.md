@@ -2,6 +2,12 @@
 
 Checkout [Live Preview](https://sammaji.pages.dev)
 
+## Preview
+![Home Component](./prototype_and_preview/preview/PreviewHome.png)
+![Repositories Component](./prototype_and_preview/preview/PreviewRepo.png)
+
+
+
 ## Getting Started
 
 First clone this project. You can also fork this project and then clone.
@@ -29,11 +35,6 @@ To create a **production build**, run:
 npm run build
 serve -s build
 ```
-
-## Preview
-![Home Component](./prototype_and_preview/preview/PreviewHome.png)
-![Repositories Component](./prototype_and_preview/preview/PreviewRepo.png)
-
 
 ## Customize Website
 
