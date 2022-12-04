@@ -1,4 +1,3 @@
-import React, { useEffect, useState } from "react";
 import "./Home.css";
 import { USERNAME, JOURNEY_DATA } from "../../user";
 import JourneyList from "../../components/journey_component/JourneyList";
